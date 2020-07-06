@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCell" customModule="GreetWell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="206" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BirthdayHome" translatesAutoresizingMaskIntoConstraints="NO" id="z0z-lQ-0Nn">
+                        <rect key="frame" x="0.0" y="0.0" width="206" height="195"/>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ch-8H-wCr" userLabel="Highlight Indicator">
+                        <rect key="frame" x="0.0" y="0.0" width="206" height="195"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="z0z-lQ-0Nn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="05Y-xo-AnS"/>
+                <constraint firstAttribute="bottom" secondItem="3ch-8H-wCr" secondAttribute="bottom" id="0Dk-eZ-TR5"/>
+                <constraint firstItem="3ch-8H-wCr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4sA-8Z-bZf"/>
+                <constraint firstItem="3ch-8H-wCr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RDR-Ey-h1h"/>
+                <constraint firstAttribute="bottom" secondItem="z0z-lQ-0Nn" secondAttribute="bottom" id="V7x-1D-ApZ"/>
+                <constraint firstItem="z0z-lQ-0Nn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j6I-sZ-ghd"/>
+                <constraint firstAttribute="trailing" secondItem="3ch-8H-wCr" secondAttribute="trailing" id="lJV-YE-JTE"/>
+                <constraint firstAttribute="trailing" secondItem="z0z-lQ-0Nn" secondAttribute="trailing" id="xGo-FK-aYO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="highlightIndicator" destination="3ch-8H-wCr" id="s4G-hS-LFI"/>
+                <outlet property="imageView" destination="z0z-lQ-0Nn" id="8ce-6g-AF5"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="120.87053571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BirthdayHome" width="998" height="998"/>
+    </resources>
+</document>
