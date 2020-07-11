@@ -28,6 +28,7 @@ class IndividualGreetingHomeVC: UIViewController {
     func setupNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.topViewController?.title = HomeGreetingResponse.getIndividualGreetingsPageTitle(greetType: greetingFromHome.greetingType)
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.hidesBackButton = false
         navigationController?.isNavigationBarHidden = false
     }
@@ -59,10 +60,9 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let catDetailVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-//        catDetailVC.selectedCatFirstTime = greetings[indexPath.row]
-//        navigationController?.pushViewController(catDetailVC, animated: true)
-        
+        let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        detailVC.greetingFromHome = greetings[indexPath.row]
+        navigationController?.pushViewController(detailVC, animated: true)
         collectionView.deselectItem(at: indexPath, animated: true)
     }
     

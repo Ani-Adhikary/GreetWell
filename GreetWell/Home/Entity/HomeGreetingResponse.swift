@@ -155,6 +155,12 @@ class Greeting {
     }
 }
 
+extension Greeting: Equatable {
+    static func ==(lhs: Greeting, rhs: Greeting) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
 enum GreetingType: String {
     case home
     case birthday

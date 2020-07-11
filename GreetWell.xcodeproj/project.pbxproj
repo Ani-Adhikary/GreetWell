@@ -14,6 +14,9 @@
 		AF37837F24B22D3C0001FE96 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37837D24B22D3C0001FE96 /* HomeCell.swift */; };
 		AF37838024B22D3C0001FE96 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF37837E24B22D3C0001FE96 /* HomeCell.xib */; };
 		AF37838224B22FF80001FE96 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37838124B22FF80001FE96 /* CustomLayout.swift */; };
+		AF48C0AF24B9E9EC00DE8AE9 /* GreetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48C0AD24B9E9EC00DE8AE9 /* GreetingCell.swift */; };
+		AF48C0B024B9E9EC00DE8AE9 /* GreetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF48C0AE24B9E9EC00DE8AE9 /* GreetingCell.xib */; };
+		AF48C0B224B9F1DA00DE8AE9 /* DeviceEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48C0B124B9F1DA00DE8AE9 /* DeviceEnv.swift */; };
 		AF9C217B248BAAB600E718DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C217A248BAAB600E718DB /* AppDelegate.swift */; };
 		AF9C217D248BAAB600E718DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C217C248BAAB600E718DB /* SceneDelegate.swift */; };
 		AF9C2185248BAAB700E718DB /* GreetWell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2183248BAAB700E718DB /* GreetWell.xcdatamodeld */; };
@@ -51,6 +54,9 @@
 		AF37837D24B22D3C0001FE96 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		AF37837E24B22D3C0001FE96 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		AF37838124B22FF80001FE96 /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		AF48C0AD24B9E9EC00DE8AE9 /* GreetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingCell.swift; sourceTree = "<group>"; };
+		AF48C0AE24B9E9EC00DE8AE9 /* GreetingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingCell.xib; sourceTree = "<group>"; };
+		AF48C0B124B9F1DA00DE8AE9 /* DeviceEnv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceEnv.swift; sourceTree = "<group>"; };
 		AF9C2177248BAAB600E718DB /* GreetWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreetWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9C217A248BAAB600E718DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF9C217C248BAAB600E718DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +134,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		AF48C0AC24B9E9B300DE8AE9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AF48C0AD24B9E9EC00DE8AE9 /* GreetingCell.swift */,
+				AF48C0AE24B9E9EC00DE8AE9 /* GreetingCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		AF9C216E248BAAB600E718DB = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +185,7 @@
 		AFA754D824B99EF300519A88 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AF48C0AC24B9E9B300DE8AE9 /* Cells */,
 				AFA754D924B99F2300519A88 /* DetailViewController.swift */,
 				AFA754DA24B99F2300519A88 /* DetailViewController.xib */,
 			);
@@ -236,6 +252,7 @@
 		AFEF43DE24ADFD6E0028A48D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AF48C0B124B9F1DA00DE8AE9 /* DeviceEnv.swift */,
 				AF18768524B247AA00BD4E97 /* Extensions */,
 				AF37838124B22FF80001FE96 /* CustomLayout.swift */,
 				AF37837724B226A30001FE96 /* Constants */,
@@ -361,6 +378,7 @@
 				AFA754E224B9BAA800519A88 /* IndividualGreetingHomeVC.xib in Resources */,
 				AF37838024B22D3C0001FE96 /* HomeCell.xib in Resources */,
 				AFEF43E324ADFDF40028A48D /* HomeViewController.xib in Resources */,
+				AF48C0B024B9E9EC00DE8AE9 /* GreetingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +392,7 @@
 				AFDF635324B3771D00017240 /* WomansDayGreetingConstants.swift in Sources */,
 				AFEF43F524AE1EBF0028A48D /* FavouritesViewController.swift in Sources */,
 				AFA754DB24B99F2300519A88 /* DetailViewController.swift in Sources */,
+				AF48C0AF24B9E9EC00DE8AE9 /* GreetingCell.swift in Sources */,
 				AFDF634F24B376E900017240 /* USAIndeDayGreetingConstants.swift in Sources */,
 				AFDF634B24B376AA00017240 /* GaneshChaturthiGreetingConstants.swift in Sources */,
 				AFDF634924B3764100017240 /* CoronaInfoConstants.swift in Sources */,
@@ -397,6 +416,7 @@
 				AF18768724B247B800BD4E97 /* ArrayExtension.swift in Sources */,
 				AF37838224B22FF80001FE96 /* CustomLayout.swift in Sources */,
 				AFEF43E224ADFDF40028A48D /* HomeViewController.swift in Sources */,
+				AF48C0B224B9F1DA00DE8AE9 /* DeviceEnv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
