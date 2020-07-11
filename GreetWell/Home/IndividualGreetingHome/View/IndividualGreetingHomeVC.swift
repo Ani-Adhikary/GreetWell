@@ -8,16 +8,16 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class IndividualGreetingHomeVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var greetings = [Greeting]()
+    var greetingFromHome = Greeting()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        greetings = HomeGreetingResponse.getGreetings(greetType: .home, greetingPageCategory: GreetingPageCategory.homePage)
+        setupGreetings()
         setupCollectionView()
-        setupCollectionViewItemSize()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,26 +26,27 @@ class HomeViewController: UIViewController {
     }
     
     func setupNavBar() {
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.topViewController?.title = "Home"
-        navigationItem.hidesBackButton = true
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.topViewController?.title = HomeGreetingResponse.getIndividualGreetingsPageTitle(greetType: greetingFromHome.greetingType)
+        navigationItem.hidesBackButton = false
         navigationController?.isNavigationBarHidden = false
     }
     
     func setupCollectionView() {
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(HomeCell.nib, forCellWithReuseIdentifier: HomeCell.identifier)        
+        collectionView.register(HomeCell.nib, forCellWithReuseIdentifier: HomeCell.identifier)
+        let customLayout = CustomLayout()
+        customLayout.delegate = self
+        collectionView.collectionViewLayout = customLayout
     }
     
-    private func setupCollectionViewItemSize() {
-      let customLayout = CustomLayout()
-      customLayout.delegate = self
-      collectionView.collectionViewLayout = customLayout
+    private func setupGreetings() {
+        greetings = HomeGreetingResponse.getGreetings(greetType: greetingFromHome.greetingType, greetingPageCategory: GreetingPageCategory.greetingPage)
     }
 }
 
-extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return greetings.count
     }
@@ -58,17 +59,19 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let individualGreetingHomeVC = IndividualGreetingHomeVC(nibName: "IndividualGreetingHomeVC", bundle: nil)
-        individualGreetingHomeVC.greetingFromHome = greetings[indexPath.row]
-        navigationController?.pushViewController(individualGreetingHomeVC, animated: true)
+//        let catDetailVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+//        catDetailVC.selectedCatFirstTime = greetings[indexPath.row]
+//        navigationController?.pushViewController(catDetailVC, animated: true)
+        
         collectionView.deselectItem(at: indexPath, animated: true)
     }
     
 }
 
-extension HomeViewController: CustomLayoutDelegate {
+extension IndividualGreetingHomeVC: CustomLayoutDelegate {
   func collectionView(_ collectionView: UICollectionView, sizeOfPhotoAtIndexPath indexPath: IndexPath) -> CGSize {
     return UIImage(named: greetings[indexPath.item].greetingImage)!.size
   }
 }
+
 

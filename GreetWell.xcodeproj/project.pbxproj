@@ -19,6 +19,19 @@
 		AF9C2185248BAAB700E718DB /* GreetWell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2183248BAAB700E718DB /* GreetWell.xcdatamodeld */; };
 		AF9C2187248BAABE00E718DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9C2186248BAABE00E718DB /* Assets.xcassets */; };
 		AF9C218A248BAABE00E718DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9C2188248BAABE00E718DB /* LaunchScreen.storyboard */; };
+		AFA754DB24B99F2300519A88 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA754D924B99F2300519A88 /* DetailViewController.swift */; };
+		AFA754DC24B99F2400519A88 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFA754DA24B99F2300519A88 /* DetailViewController.xib */; };
+		AFA754E124B9BAA800519A88 /* IndividualGreetingHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA754DF24B9BAA800519A88 /* IndividualGreetingHomeVC.swift */; };
+		AFA754E224B9BAA800519A88 /* IndividualGreetingHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFA754E024B9BAA800519A88 /* IndividualGreetingHomeVC.xib */; };
+		AFDF634324B3738D00017240 /* BirthdayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634224B3738D00017240 /* BirthdayGreetingConstants.swift */; };
+		AFDF634524B374BD00017240 /* FathersDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634424B374BD00017240 /* FathersDayGreetingConstants.swift */; };
+		AFDF634724B375C800017240 /* ValentinesDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634624B375C800017240 /* ValentinesDayGreetingConstants.swift */; };
+		AFDF634924B3764100017240 /* CoronaInfoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634824B3764100017240 /* CoronaInfoConstants.swift */; };
+		AFDF634B24B376AA00017240 /* GaneshChaturthiGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634A24B376AA00017240 /* GaneshChaturthiGreetingConstants.swift */; };
+		AFDF634D24B376C500017240 /* JanmashtamiGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634C24B376C500017240 /* JanmashtamiGreetingConstants.swift */; };
+		AFDF634F24B376E900017240 /* USAIndeDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634E24B376E900017240 /* USAIndeDayGreetingConstants.swift */; };
+		AFDF635124B376FD00017240 /* EidGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF635024B376FD00017240 /* EidGreetingConstants.swift */; };
+		AFDF635324B3771D00017240 /* WomansDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF635224B3771D00017240 /* WomansDayGreetingConstants.swift */; };
 		AFEF43E224ADFDF40028A48D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF43E024ADFDF40028A48D /* HomeViewController.swift */; };
 		AFEF43E324ADFDF40028A48D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFEF43E124ADFDF40028A48D /* HomeViewController.xib */; };
 		AFEF43E824ADFE540028A48D /* BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF43E624ADFE540028A48D /* BusinessLogic.swift */; };
@@ -45,6 +58,19 @@
 		AF9C2186248BAABE00E718DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF9C2189248BAABE00E718DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF9C218B248BAABE00E718DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA754D924B99F2300519A88 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AFA754DA24B99F2300519A88 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		AFA754DF24B9BAA800519A88 /* IndividualGreetingHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualGreetingHomeVC.swift; sourceTree = "<group>"; };
+		AFA754E024B9BAA800519A88 /* IndividualGreetingHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndividualGreetingHomeVC.xib; sourceTree = "<group>"; };
+		AFDF634224B3738D00017240 /* BirthdayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayGreetingConstants.swift; sourceTree = "<group>"; };
+		AFDF634424B374BD00017240 /* FathersDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FathersDayGreetingConstants.swift; sourceTree = "<group>"; };
+		AFDF634624B375C800017240 /* ValentinesDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValentinesDayGreetingConstants.swift; sourceTree = "<group>"; };
+		AFDF634824B3764100017240 /* CoronaInfoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaInfoConstants.swift; sourceTree = "<group>"; };
+		AFDF634A24B376AA00017240 /* GaneshChaturthiGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaneshChaturthiGreetingConstants.swift; sourceTree = "<group>"; };
+		AFDF634C24B376C500017240 /* JanmashtamiGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanmashtamiGreetingConstants.swift; sourceTree = "<group>"; };
+		AFDF634E24B376E900017240 /* USAIndeDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USAIndeDayGreetingConstants.swift; sourceTree = "<group>"; };
+		AFDF635024B376FD00017240 /* EidGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EidGreetingConstants.swift; sourceTree = "<group>"; };
+		AFDF635224B3771D00017240 /* WomansDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomansDayGreetingConstants.swift; sourceTree = "<group>"; };
 		AFEF43E024ADFDF40028A48D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AFEF43E124ADFDF40028A48D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AFEF43E624ADFE540028A48D /* BusinessLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLogic.swift; sourceTree = "<group>"; };
@@ -80,6 +106,15 @@
 			children = (
 				AF37837824B226C00001FE96 /* GreetingsHomeConstants.swift */,
 				AF18768824B2496F00BD4E97 /* MothersDayGreetingConstants.swift */,
+				AFDF634224B3738D00017240 /* BirthdayGreetingConstants.swift */,
+				AFDF634424B374BD00017240 /* FathersDayGreetingConstants.swift */,
+				AFDF634624B375C800017240 /* ValentinesDayGreetingConstants.swift */,
+				AFDF634824B3764100017240 /* CoronaInfoConstants.swift */,
+				AFDF634A24B376AA00017240 /* GaneshChaturthiGreetingConstants.swift */,
+				AFDF634C24B376C500017240 /* JanmashtamiGreetingConstants.swift */,
+				AFDF634E24B376E900017240 /* USAIndeDayGreetingConstants.swift */,
+				AFDF635024B376FD00017240 /* EidGreetingConstants.swift */,
+				AFDF635224B3771D00017240 /* WomansDayGreetingConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -124,6 +159,40 @@
 			path = GreetWell;
 			sourceTree = "<group>";
 		};
+		AFA754D724B99EDC00519A88 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AFA754D824B99EF300519A88 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		AFA754D824B99EF300519A88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFA754D924B99F2300519A88 /* DetailViewController.swift */,
+				AFA754DA24B99F2300519A88 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFA754DD24B9BA5B00519A88 /* IndividualGreetingHome */ = {
+			isa = PBXGroup;
+			children = (
+				AFA754DE24B9BA7800519A88 /* View */,
+			);
+			path = IndividualGreetingHome;
+			sourceTree = "<group>";
+		};
+		AFA754DE24B9BA7800519A88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFA754DF24B9BAA800519A88 /* IndividualGreetingHomeVC.swift */,
+				AFA754E024B9BAA800519A88 /* IndividualGreetingHomeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AFEF43DA24ADFC350028A48D /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +207,8 @@
 		AFEF43DB24ADFD580028A48D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AFA754DD24B9BA5B00519A88 /* IndividualGreetingHome */,
+				AFA754D724B99EDC00519A88 /* Detail */,
 				AFEF43DD24ADFD640028A48D /* Entity */,
 				AFEF43DC24ADFD5F0028A48D /* View */,
 			);
@@ -284,8 +355,10 @@
 			files = (
 				AFEF43EF24ADFE5F0028A48D /* CommonErrorViewController.xib in Resources */,
 				AFEF43F624AE1EBF0028A48D /* FavouritesViewController.xib in Resources */,
+				AFA754DC24B99F2400519A88 /* DetailViewController.xib in Resources */,
 				AF9C218A248BAABE00E718DB /* LaunchScreen.storyboard in Resources */,
 				AF9C2187248BAABE00E718DB /* Assets.xcassets in Resources */,
+				AFA754E224B9BAA800519A88 /* IndividualGreetingHomeVC.xib in Resources */,
 				AF37838024B22D3C0001FE96 /* HomeCell.xib in Resources */,
 				AFEF43E324ADFDF40028A48D /* HomeViewController.xib in Resources */,
 			);
@@ -298,18 +371,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDF635324B3771D00017240 /* WomansDayGreetingConstants.swift in Sources */,
 				AFEF43F524AE1EBF0028A48D /* FavouritesViewController.swift in Sources */,
+				AFA754DB24B99F2300519A88 /* DetailViewController.swift in Sources */,
+				AFDF634F24B376E900017240 /* USAIndeDayGreetingConstants.swift in Sources */,
+				AFDF634B24B376AA00017240 /* GaneshChaturthiGreetingConstants.swift in Sources */,
+				AFDF634924B3764100017240 /* CoronaInfoConstants.swift in Sources */,
 				AFEF43E924ADFE540028A48D /* DataVault.swift in Sources */,
 				AFEF43E824ADFE540028A48D /* BusinessLogic.swift in Sources */,
+				AFDF634324B3738D00017240 /* BirthdayGreetingConstants.swift in Sources */,
+				AFDF634D24B376C500017240 /* JanmashtamiGreetingConstants.swift in Sources */,
 				AF37837B24B22A7F0001FE96 /* HomeGreetingResponse.swift in Sources */,
+				AFA754E124B9BAA800519A88 /* IndividualGreetingHomeVC.swift in Sources */,
 				AFEF43F124AE1E4F0028A48D /* MainTabBarController.swift in Sources */,
 				AF18768924B2497000BD4E97 /* MothersDayGreetingConstants.swift in Sources */,
 				AFEF43EE24ADFE5F0028A48D /* CommonErrorViewController.swift in Sources */,
+				AFDF634724B375C800017240 /* ValentinesDayGreetingConstants.swift in Sources */,
+				AFDF634524B374BD00017240 /* FathersDayGreetingConstants.swift in Sources */,
 				AF37837924B226C00001FE96 /* GreetingsHomeConstants.swift in Sources */,
 				AF9C2185248BAAB700E718DB /* GreetWell.xcdatamodeld in Sources */,
 				AF9C217B248BAAB600E718DB /* AppDelegate.swift in Sources */,
 				AF9C217D248BAAB600E718DB /* SceneDelegate.swift in Sources */,
 				AF37837F24B22D3C0001FE96 /* HomeCell.swift in Sources */,
+				AFDF635124B376FD00017240 /* EidGreetingConstants.swift in Sources */,
 				AF18768724B247B800BD4E97 /* ArrayExtension.swift in Sources */,
 				AF37838224B22FF80001FE96 /* CustomLayout.swift in Sources */,
 				AFEF43E224ADFDF40028A48D /* HomeViewController.swift in Sources */,
