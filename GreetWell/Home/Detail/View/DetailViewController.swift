@@ -20,10 +20,10 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupGreetings()
+        //setupGreetings()
         setupNavBar()
         setupCollectionView()
-        
+        selectedGreeting = greetingFromHome
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideNavAndTabBarOnTap))
         view.addGestureRecognizer(tapGesture)
     }

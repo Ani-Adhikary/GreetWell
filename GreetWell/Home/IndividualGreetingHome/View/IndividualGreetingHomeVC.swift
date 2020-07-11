@@ -61,6 +61,7 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        detailVC.greetings = greetings
         detailVC.greetingFromHome = greetings[indexPath.row]
         navigationController?.pushViewController(detailVC, animated: true)
         collectionView.deselectItem(at: indexPath, animated: true)
