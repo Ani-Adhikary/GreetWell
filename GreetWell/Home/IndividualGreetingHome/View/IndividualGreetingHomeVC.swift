@@ -36,7 +36,7 @@ class IndividualGreetingHomeVC: UIViewController {
     func setupCollectionView() {
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(HomeCell.nib, forCellWithReuseIdentifier: HomeCell.identifier)
+        collectionView.register(FavCell.nib, forCellWithReuseIdentifier: FavCell.identifier)
         let customLayout = CustomLayout()
         customLayout.delegate = self
         collectionView.collectionViewLayout = customLayout
@@ -53,7 +53,7 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let homeCell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCell.identifier, for: indexPath) as! HomeCell
+        let homeCell = collectionView.dequeueReusableCell(withReuseIdentifier: FavCell.identifier, for: indexPath) as! FavCell
         let greetVal = greetings[indexPath.row]
         homeCell.setupData(greeting: greetVal)
         return homeCell

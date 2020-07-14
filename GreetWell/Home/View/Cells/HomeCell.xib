@@ -19,25 +19,16 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BirthdayHome" translatesAutoresizingMaskIntoConstraints="NO" id="z0z-lQ-0Nn">
                         <rect key="frame" x="0.0" y="0.0" width="206" height="195"/>
                     </imageView>
-                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ch-8H-wCr" userLabel="Highlight Indicator">
-                        <rect key="frame" x="0.0" y="0.0" width="206" height="195"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="z0z-lQ-0Nn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="05Y-xo-AnS"/>
-                <constraint firstAttribute="bottom" secondItem="3ch-8H-wCr" secondAttribute="bottom" id="0Dk-eZ-TR5"/>
-                <constraint firstItem="3ch-8H-wCr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4sA-8Z-bZf"/>
-                <constraint firstItem="3ch-8H-wCr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RDR-Ey-h1h"/>
                 <constraint firstAttribute="bottom" secondItem="z0z-lQ-0Nn" secondAttribute="bottom" id="V7x-1D-ApZ"/>
                 <constraint firstItem="z0z-lQ-0Nn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j6I-sZ-ghd"/>
-                <constraint firstAttribute="trailing" secondItem="3ch-8H-wCr" secondAttribute="trailing" id="lJV-YE-JTE"/>
                 <constraint firstAttribute="trailing" secondItem="z0z-lQ-0Nn" secondAttribute="trailing" id="xGo-FK-aYO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
-                <outlet property="highlightIndicator" destination="3ch-8H-wCr" id="s4G-hS-LFI"/>
                 <outlet property="imageView" destination="z0z-lQ-0Nn" id="8ce-6g-AF5"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="120.87053571428571"/>

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AF18768724B247B800BD4E97 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18768624B247B800BD4E97 /* ArrayExtension.swift */; };
 		AF18768924B2497000BD4E97 /* MothersDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18768824B2496F00BD4E97 /* MothersDayGreetingConstants.swift */; };
+		AF364D7024BDC51E002AE701 /* FavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF364D6E24BDC51E002AE701 /* FavCell.swift */; };
+		AF364D7124BDC51F002AE701 /* FavCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF364D6F24BDC51E002AE701 /* FavCell.xib */; };
 		AF37837924B226C00001FE96 /* GreetingsHomeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37837824B226C00001FE96 /* GreetingsHomeConstants.swift */; };
 		AF37837B24B22A7F0001FE96 /* HomeGreetingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37837A24B22A7F0001FE96 /* HomeGreetingResponse.swift */; };
 		AF37837F24B22D3C0001FE96 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37837D24B22D3C0001FE96 /* HomeCell.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		AF18768624B247B800BD4E97 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		AF18768824B2496F00BD4E97 /* MothersDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothersDayGreetingConstants.swift; sourceTree = "<group>"; };
+		AF364D6E24BDC51E002AE701 /* FavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCell.swift; sourceTree = "<group>"; };
+		AF364D6F24BDC51E002AE701 /* FavCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavCell.xib; sourceTree = "<group>"; };
 		AF37837824B226C00001FE96 /* GreetingsHomeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsHomeConstants.swift; sourceTree = "<group>"; };
 		AF37837A24B22A7F0001FE96 /* HomeGreetingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGreetingResponse.swift; sourceTree = "<group>"; };
 		AF37837D24B22D3C0001FE96 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 				AF18768624B247B800BD4E97 /* ArrayExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF364D6D24BDC501002AE701 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AF364D6E24BDC51E002AE701 /* FavCell.swift */,
+				AF364D6F24BDC51E002AE701 /* FavCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		AF37837724B226A30001FE96 /* Constants */ = {
@@ -203,6 +216,7 @@
 		AFA754DE24B9BA7800519A88 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AF364D6D24BDC501002AE701 /* Cells */,
 				AFA754DF24B9BAA800519A88 /* IndividualGreetingHomeVC.swift */,
 				AFA754E024B9BAA800519A88 /* IndividualGreetingHomeVC.xib */,
 			);
@@ -371,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFEF43EF24ADFE5F0028A48D /* CommonErrorViewController.xib in Resources */,
+				AF364D7124BDC51F002AE701 /* FavCell.xib in Resources */,
 				AFEF43F624AE1EBF0028A48D /* FavouritesViewController.xib in Resources */,
 				AFA754DC24B99F2400519A88 /* DetailViewController.xib in Resources */,
 				AF9C218A248BAABE00E718DB /* LaunchScreen.storyboard in Resources */,
@@ -403,6 +418,7 @@
 				AF37837B24B22A7F0001FE96 /* HomeGreetingResponse.swift in Sources */,
 				AFA754E124B9BAA800519A88 /* IndividualGreetingHomeVC.swift in Sources */,
 				AFEF43F124AE1E4F0028A48D /* MainTabBarController.swift in Sources */,
+				AF364D7024BDC51E002AE701 /* FavCell.swift in Sources */,
 				AF18768924B2497000BD4E97 /* MothersDayGreetingConstants.swift in Sources */,
 				AFEF43EE24ADFE5F0028A48D /* CommonErrorViewController.swift in Sources */,
 				AFDF634724B375C800017240 /* ValentinesDayGreetingConstants.swift in Sources */,
