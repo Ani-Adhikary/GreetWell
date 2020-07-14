@@ -62,8 +62,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
            
            if #available(iOS 13.0, *) {
                let navBarAppearance = UINavigationBarAppearance()
-               navBarAppearance.configureWithDefaultBackground()
-               //navBarAppearance.configureWithOpaqueBackground()
+               //navBarAppearance.configureWithDefaultBackground()
+               navBarAppearance.configureWithOpaqueBackground()
                
                navigationController.navigationBar.standardAppearance = navBarAppearance
                navigationController.navigationBar.compactAppearance = navBarAppearance
