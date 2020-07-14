@@ -129,8 +129,6 @@ class DetailViewController: UIViewController {
     }
 }
 
-
-
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return greetings.count
