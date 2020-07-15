@@ -98,7 +98,7 @@ class DetailViewController: UIViewController {
                 return
             }
             
-            UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(self.image(_:didFinishSavingWithErrotr:contextInfo:)), nil)
+            UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
         }
         
         let shareAction: UIAlertAction = UIAlertAction(title: "Share", style: .default) { action -> Void in
