@@ -29,12 +29,12 @@ class DetailViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-//        if let indexOfGreeting = greetings.firstIndex(where: {$0 === greetingFromHome}) {
-//            print("indexOfGreeting--------- \(indexOfGreeting)")
-//            collectionView.scrollToItem(at: IndexPath(item: indexOfGreeting, section: 0), at: .right, animated: false)
-//        } else {
-//            print("Not found-----------")
-//        }
+        //        if let indexOfGreeting = greetings.firstIndex(where: {$0 === greetingFromHome}) {
+        //            print("indexOfGreeting--------- \(indexOfGreeting)")
+        //            collectionView.scrollToItem(at: IndexPath(item: indexOfGreeting, section: 0), at: .right, animated: false)
+        //        } else {
+        //            print("Not found-----------")
+        //        }
         
         if let indexOfGreeting = greetings.firstIndex(of: greetingFromHome) {
             print("indexOfGreeting--------- \(indexOfGreeting)")
@@ -91,11 +91,17 @@ class DetailViewController: UIViewController {
         let actionSheetController: UIAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
         // create an action
-        let firstAction: UIAlertAction = UIAlertAction(title: "Save", style: .default) { action -> Void in
-            print("First Action pressed")
+        let saveAction: UIAlertAction = UIAlertAction(title: "Save", style: .default) { action -> Void in
+            print("Save Action pressed")
+            
+            guard let selectedImage = UIImage(named: self.selectedGreeting.greetingImage) else {
+                return
+            }
+            
+            UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(self.image(_:didFinishSavingWithErrotr:contextInfo:)), nil)
         }
         
-        let secondAction: UIAlertAction = UIAlertAction(title: "Share", style: .default) { action -> Void in
+        let shareAction: UIAlertAction = UIAlertAction(title: "Share", style: .default) { action -> Void in
             
             print("Share Action pressed")
             //            guard let image = UIImage(named: self.selectedGreeting.greetingImage ?? "Birthday1") else { return }
@@ -115,8 +121,8 @@ class DetailViewController: UIViewController {
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in }
         
         // add actions
-        actionSheetController.addAction(firstAction)
-        actionSheetController.addAction(secondAction)
+        actionSheetController.addAction(saveAction)
+        actionSheetController.addAction(shareAction)
         actionSheetController.addAction(cancelAction)
         
         if DeviceEnv.isIpad {
@@ -126,6 +132,22 @@ class DetailViewController: UIViewController {
         }
         self.present(actionSheetController, animated: true, completion: nil)
         
+    }
+    
+    //MARK: - Add image to Library
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            // we got back an error!
+            showAlertWith(title: "Save error", message: error.localizedDescription)
+        } else {
+            showAlertWith(title: "Saved!", message: "Greeting saved")
+        }
+    }
+    
+    func showAlertWith(title: String, message: String){
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
     }
 }
 
