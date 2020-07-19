@@ -27,6 +27,18 @@ struct QuoteList {
     var listID: Int
     var listText: String
     var listType: QuoteType
+    
+    init() {
+        listID = 0
+        listText = ""
+        listType = QuoteType.birthday
+    }
+    
+    init(listID: Int, listText: String, listType: QuoteType) {
+        self.listID = listID
+        self.listText = listText
+        self.listType = listType
+    }
 }
 
 enum QuoteType: String {
