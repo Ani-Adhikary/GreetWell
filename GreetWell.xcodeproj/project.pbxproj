@@ -11,6 +11,16 @@
 		AF18768924B2497000BD4E97 /* MothersDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18768824B2496F00BD4E97 /* MothersDayGreetingConstants.swift */; };
 		AF364D7024BDC51E002AE701 /* FavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF364D6E24BDC51E002AE701 /* FavCell.swift */; };
 		AF364D7124BDC51F002AE701 /* FavCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF364D6F24BDC51E002AE701 /* FavCell.xib */; };
+		AF37243124C175DE0063FCDD /* QuotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37242F24C175DE0063FCDD /* QuotesListViewController.swift */; };
+		AF37243224C175DE0063FCDD /* QuotesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF37243024C175DE0063FCDD /* QuotesListViewController.xib */; };
+		AF37243524C176060063FCDD /* IndividualQuotesHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37243324C176060063FCDD /* IndividualQuotesHomeVC.swift */; };
+		AF37243624C176060063FCDD /* IndividualQuotesHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF37243424C176060063FCDD /* IndividualQuotesHomeVC.xib */; };
+		AF37243924C176340063FCDD /* QuotesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37243724C176340063FCDD /* QuotesDetailVC.swift */; };
+		AF37243A24C176340063FCDD /* QuotesDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF37243824C176340063FCDD /* QuotesDetailVC.xib */; };
+		AF37243D24C179B20063FCDD /* GreetingListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37243C24C179B20063FCDD /* GreetingListResponse.swift */; };
+		AF37244024C179CC0063FCDD /* QuotesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37243F24C179CC0063FCDD /* QuotesResponse.swift */; };
+		AF37244424C183DA0063FCDD /* QuoteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37244224C183DA0063FCDD /* QuoteListCell.swift */; };
+		AF37244524C183DA0063FCDD /* QuoteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF37244324C183DA0063FCDD /* QuoteListCell.xib */; };
 		AF37837924B226C00001FE96 /* GreetingsHomeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37837824B226C00001FE96 /* GreetingsHomeConstants.swift */; };
 		AF37837B24B22A7F0001FE96 /* HomeGreetingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37837A24B22A7F0001FE96 /* HomeGreetingResponse.swift */; };
 		AF37837F24B22D3C0001FE96 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37837D24B22D3C0001FE96 /* HomeCell.swift */; };
@@ -53,6 +63,16 @@
 		AF18768824B2496F00BD4E97 /* MothersDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothersDayGreetingConstants.swift; sourceTree = "<group>"; };
 		AF364D6E24BDC51E002AE701 /* FavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCell.swift; sourceTree = "<group>"; };
 		AF364D6F24BDC51E002AE701 /* FavCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavCell.xib; sourceTree = "<group>"; };
+		AF37242F24C175DE0063FCDD /* QuotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesListViewController.swift; sourceTree = "<group>"; };
+		AF37243024C175DE0063FCDD /* QuotesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesListViewController.xib; sourceTree = "<group>"; };
+		AF37243324C176060063FCDD /* IndividualQuotesHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualQuotesHomeVC.swift; sourceTree = "<group>"; };
+		AF37243424C176060063FCDD /* IndividualQuotesHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndividualQuotesHomeVC.xib; sourceTree = "<group>"; };
+		AF37243724C176340063FCDD /* QuotesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDetailVC.swift; sourceTree = "<group>"; };
+		AF37243824C176340063FCDD /* QuotesDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesDetailVC.xib; sourceTree = "<group>"; };
+		AF37243C24C179B20063FCDD /* GreetingListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingListResponse.swift; sourceTree = "<group>"; };
+		AF37243F24C179CC0063FCDD /* QuotesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResponse.swift; sourceTree = "<group>"; };
+		AF37244224C183DA0063FCDD /* QuoteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListCell.swift; sourceTree = "<group>"; };
+		AF37244324C183DA0063FCDD /* QuoteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteListCell.xib; sourceTree = "<group>"; };
 		AF37837824B226C00001FE96 /* GreetingsHomeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsHomeConstants.swift; sourceTree = "<group>"; };
 		AF37837A24B22A7F0001FE96 /* HomeGreetingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGreetingResponse.swift; sourceTree = "<group>"; };
 		AF37837D24B22D3C0001FE96 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
@@ -120,6 +140,103 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		AF37242824C174930063FCDD /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				AF37242C24C1752E0063FCDD /* Detail */,
+				AF37242B24C175150063FCDD /* IndividualQuotesHome */,
+				AF37242924C174A30063FCDD /* QuoteList */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		AF37242924C174A30063FCDD /* QuoteList */ = {
+			isa = PBXGroup;
+			children = (
+				AF37243B24C178410063FCDD /* Entity */,
+				AF37242A24C174F50063FCDD /* View */,
+			);
+			path = QuoteList;
+			sourceTree = "<group>";
+		};
+		AF37242A24C174F50063FCDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF37244124C1836F0063FCDD /* Cells */,
+				AF37242F24C175DE0063FCDD /* QuotesListViewController.swift */,
+				AF37243024C175DE0063FCDD /* QuotesListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF37242B24C175150063FCDD /* IndividualQuotesHome */ = {
+			isa = PBXGroup;
+			children = (
+				AF37243E24C179BA0063FCDD /* Entity */,
+				AF37242D24C175AA0063FCDD /* View */,
+			);
+			path = IndividualQuotesHome;
+			sourceTree = "<group>";
+		};
+		AF37242C24C1752E0063FCDD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AF37242E24C175B70063FCDD /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		AF37242D24C175AA0063FCDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF37243324C176060063FCDD /* IndividualQuotesHomeVC.swift */,
+				AF37243424C176060063FCDD /* IndividualQuotesHomeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF37242E24C175B70063FCDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF37243724C176340063FCDD /* QuotesDetailVC.swift */,
+				AF37243824C176340063FCDD /* QuotesDetailVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF37243B24C178410063FCDD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AF37243C24C179B20063FCDD /* GreetingListResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AF37243E24C179BA0063FCDD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AF37243F24C179CC0063FCDD /* QuotesResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AF37244124C1836F0063FCDD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AF37244224C183DA0063FCDD /* QuoteListCell.swift */,
+				AF37244324C183DA0063FCDD /* QuoteListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AF37244624C1BE0B0063FCDD /* FavouritesList */ = {
+			isa = PBXGroup;
+			children = (
+				AFEF43F224AE1E9E0028A48D /* View */,
+			);
+			path = FavouritesList;
+			sourceTree = "<group>";
+		};
 		AF37837724B226A30001FE96 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +292,7 @@
 		AF9C2179248BAAB600E718DB /* GreetWell */ = {
 			isa = PBXGroup;
 			children = (
+				AF37242824C174930063FCDD /* Quotes */,
 				AFEF43EA24ADFE5F0028A48D /* CommonError */,
 				AFEF43E524ADFE540028A48D /* DataHandler */,
 				AFEF43E424ADFE420028A48D /* Favourites */,
@@ -286,7 +404,7 @@
 		AFEF43E424ADFE420028A48D /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
-				AFEF43F224AE1E9E0028A48D /* View */,
+				AF37244624C1BE0B0063FCDD /* FavouritesList */,
 			);
 			path = Favourites;
 			sourceTree = "<group>";
@@ -389,11 +507,15 @@
 				AFEF43F624AE1EBF0028A48D /* FavouritesViewController.xib in Resources */,
 				AFA754DC24B99F2400519A88 /* DetailViewController.xib in Resources */,
 				AF9C218A248BAABE00E718DB /* LaunchScreen.storyboard in Resources */,
+				AF37243A24C176340063FCDD /* QuotesDetailVC.xib in Resources */,
 				AF9C2187248BAABE00E718DB /* Assets.xcassets in Resources */,
 				AFA754E224B9BAA800519A88 /* IndividualGreetingHomeVC.xib in Resources */,
 				AF37838024B22D3C0001FE96 /* HomeCell.xib in Resources */,
 				AFEF43E324ADFDF40028A48D /* HomeViewController.xib in Resources */,
 				AF48C0B024B9E9EC00DE8AE9 /* GreetingCell.xib in Resources */,
+				AF37243224C175DE0063FCDD /* QuotesListViewController.xib in Resources */,
+				AF37244524C183DA0063FCDD /* QuoteListCell.xib in Resources */,
+				AF37243624C176060063FCDD /* IndividualQuotesHomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +531,7 @@
 				AFA754DB24B99F2300519A88 /* DetailViewController.swift in Sources */,
 				AF48C0AF24B9E9EC00DE8AE9 /* GreetingCell.swift in Sources */,
 				AFDF634F24B376E900017240 /* USAIndeDayGreetingConstants.swift in Sources */,
+				AF37244024C179CC0063FCDD /* QuotesResponse.swift in Sources */,
 				AFDF634B24B376AA00017240 /* GaneshChaturthiGreetingConstants.swift in Sources */,
 				AFDF634924B3764100017240 /* CoronaInfoConstants.swift in Sources */,
 				AFEF43E924ADFE540028A48D /* DataVault.swift in Sources */,
@@ -419,6 +542,7 @@
 				AFA754E124B9BAA800519A88 /* IndividualGreetingHomeVC.swift in Sources */,
 				AFEF43F124AE1E4F0028A48D /* MainTabBarController.swift in Sources */,
 				AF364D7024BDC51E002AE701 /* FavCell.swift in Sources */,
+				AF37243124C175DE0063FCDD /* QuotesListViewController.swift in Sources */,
 				AF18768924B2497000BD4E97 /* MothersDayGreetingConstants.swift in Sources */,
 				AFEF43EE24ADFE5F0028A48D /* CommonErrorViewController.swift in Sources */,
 				AFDF634724B375C800017240 /* ValentinesDayGreetingConstants.swift in Sources */,
@@ -427,9 +551,13 @@
 				AF9C2185248BAAB700E718DB /* GreetWell.xcdatamodeld in Sources */,
 				AF9C217B248BAAB600E718DB /* AppDelegate.swift in Sources */,
 				AF9C217D248BAAB600E718DB /* SceneDelegate.swift in Sources */,
+				AF37244424C183DA0063FCDD /* QuoteListCell.swift in Sources */,
 				AF37837F24B22D3C0001FE96 /* HomeCell.swift in Sources */,
 				AFDF635124B376FD00017240 /* EidGreetingConstants.swift in Sources */,
+				AF37243D24C179B20063FCDD /* GreetingListResponse.swift in Sources */,
+				AF37243524C176060063FCDD /* IndividualQuotesHomeVC.swift in Sources */,
 				AF18768724B247B800BD4E97 /* ArrayExtension.swift in Sources */,
+				AF37243924C176340063FCDD /* QuotesDetailVC.swift in Sources */,
 				AF37838224B22FF80001FE96 /* CustomLayout.swift in Sources */,
 				AFEF43E224ADFDF40028A48D /* HomeViewController.swift in Sources */,
 				AF48C0B224B9F1DA00DE8AE9 /* DeviceEnv.swift in Sources */,
