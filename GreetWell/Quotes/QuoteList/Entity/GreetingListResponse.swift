@@ -13,7 +13,7 @@ class GreetingListResponse {
     static func getList() -> [QuoteList] {
         let list = [
             QuoteList(listID: 1, listText: "Birthday", listType: .birthday),
-            QuoteList(listID: 2, listText: "Women's Day", listType: .womansDay),
+            QuoteList(listID: 2, listText: "Women's Day", listType: .womensDay),
             QuoteList(listID: 3, listText: "Mother's Day", listType: .mothersDay),
             QuoteList(listID: 4, listText: "Father's Day", listType: .fathersDay),
             QuoteList(listID: 5, listText: "Christmas", listType: .christmas),
@@ -44,7 +44,7 @@ struct QuoteList {
 enum QuoteType: String {
     case birthday
     case valentinesDay
-    case womansDay
+    case womensDay
     case mothersDay
     case fathersDay
     case corona

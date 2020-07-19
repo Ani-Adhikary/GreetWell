@@ -17,7 +17,7 @@ class IndividualQuotesHomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        quotes = QuotesResponse.getQuotes(quoteType: QuoteType.birthday)
+        quotes = QuotesResponse.getQuotes(quoteType: quoteTypeFromHome.listType)
         setupTableView()
     }
     
@@ -28,7 +28,7 @@ class IndividualQuotesHomeVC: UIViewController {
     
     func setupNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.topViewController?.title = "Your quotes"
+        navigationController?.topViewController?.title = QuotesResponse.getIndividualQuotesPageTitle(quoteType: quoteTypeFromHome.listType)
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.hidesBackButton = false
         navigationController?.isNavigationBarHidden = false

@@ -101,7 +101,7 @@ class HomeGreetingResponse {
         case .valentinesDay:
             return "Valentines Day"
         case .womansDay:
-            return "Woman's Day"
+            return "Women's Day"
         case .mothersDay:
             return "Mother's Day"
         case .eid:
