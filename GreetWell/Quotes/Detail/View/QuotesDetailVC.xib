@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuotesDetailVC" customModule="GreetWell" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="nwB-Hn-xfo" id="9gm-86-chQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

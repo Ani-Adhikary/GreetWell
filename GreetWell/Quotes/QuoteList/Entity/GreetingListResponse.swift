@@ -17,7 +17,8 @@ class GreetingListResponse {
             QuoteList(listID: 3, listText: "Mother's Day", listType: .mothersDay),
             QuoteList(listID: 4, listText: "Father's Day", listType: .fathersDay),
             QuoteList(listID: 5, listText: "Christmas", listType: .christmas),
-            QuoteList(listID: 6, listText: "New Year", listType: .newYear)
+            QuoteList(listID: 6, listText: "New Year", listType: .newYear),
+            QuoteList(listID: 7, listText: "Valentines Day", listType: .valentinesDay)
         ]
         return list
     }

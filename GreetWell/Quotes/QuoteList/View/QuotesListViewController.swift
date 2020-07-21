@@ -9,7 +9,7 @@
 import UIKit
 
 class QuotesListViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var greetingList = [QuoteList]()
@@ -18,7 +18,7 @@ class QuotesListViewController: UIViewController {
         super.viewDidLoad()
         greetingList = GreetingListResponse.getList()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavBar()
@@ -33,7 +33,7 @@ class QuotesListViewController: UIViewController {
         navigationController?.topViewController?.navigationItem.searchController = nil
     }
     
-
+    
     func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
@@ -62,14 +62,19 @@ extension QuotesListViewController: UITableViewDataSource, UITableViewDelegate {
         let list = greetingList[indexPath.row]
         quoteCell.setupData(quoteList: list)
         return quoteCell
-    
+        
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let individualQuotesHomeVC = IndividualQuotesHomeVC(nibName: "IndividualQuotesHomeVC", bundle: nil)
-        individualQuotesHomeVC.quoteTypeFromHome = greetingList[indexPath.row]
-        navigationController?.pushViewController(individualQuotesHomeVC, animated: true)
+        //        let individualQuotesHomeVC = IndividualQuotesHomeVC(nibName: "IndividualQuotesHomeVC", bundle: nil)
+        //        individualQuotesHomeVC.quoteTypeFromHome = greetingList[indexPath.row]
+        //        navigationController?.pushViewController(individualQuotesHomeVC, animated: true)
+        
+        let quotesDetailVC = QuotesDetailVC(nibName: "QuotesDetailVC", bundle: nil)
+        quotesDetailVC.quoteTypeFromHome = greetingList[indexPath.row]
+        navigationController?.pushViewController(quotesDetailVC, animated: true)
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
