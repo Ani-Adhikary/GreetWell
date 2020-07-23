@@ -66,4 +66,14 @@ struct WomensDayGreetingConstants {
     static let wdayGreeting11ID = 11
     static let wdayGreeting11Image = "WomensDay11"
     
+    // MARK: - Greeting 12
+    
+    static let wdayGreeting12ID = 12
+    static let wdayGreeting12Image = "WomensDay12"
+    
+    // MARK: - Greeting 13
+    
+    static let wdayGreeting13ID = 13
+    static let wdayGreeting13Image = "WomensDay13"
+    
 }

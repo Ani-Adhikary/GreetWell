@@ -52,7 +52,7 @@ struct MothersDayGreetingConstants {
     static let mdayGreeting7Text = "Happy Mothers Day"
     static let mdayGreeting7Image = "MothersDay07"
     
-    // MARK: - Greeting 8 - Already in Home - so can be removed
+    // MARK: - Greeting 8 - Home Greeting
     
     static let mdayGreeting8ID = 8
     static let mdayGreeting8Text = "Happy Mothers Day"
