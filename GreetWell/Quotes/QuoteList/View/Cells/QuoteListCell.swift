@@ -32,4 +32,8 @@ class QuoteListCell: UITableViewCell {
         quoteListLabel.text = quoteList.listText
     }
     
+    func setupFavs(fav: String) {
+         quoteListLabel.text = fav
+    }
+    
 }
