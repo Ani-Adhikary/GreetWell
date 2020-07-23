@@ -58,7 +58,6 @@
 		AFDF634D24B376C500017240 /* JanmashtamiGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634C24B376C500017240 /* JanmashtamiGreetingConstants.swift */; };
 		AFDF634F24B376E900017240 /* USAIndeDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634E24B376E900017240 /* USAIndeDayGreetingConstants.swift */; };
 		AFDF635124B376FD00017240 /* EidGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF635024B376FD00017240 /* EidGreetingConstants.swift */; };
-		AFDF635324B3771D00017240 /* WomansDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF635224B3771D00017240 /* WomansDayGreetingConstants.swift */; };
 		AFEF43E224ADFDF40028A48D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF43E024ADFDF40028A48D /* HomeViewController.swift */; };
 		AFEF43E324ADFDF40028A48D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFEF43E124ADFDF40028A48D /* HomeViewController.xib */; };
 		AFEF43E824ADFE540028A48D /* BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF43E624ADFE540028A48D /* BusinessLogic.swift */; };
@@ -68,6 +67,7 @@
 		AFEF43F124AE1E4F0028A48D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF43F024AE1E4F0028A48D /* MainTabBarController.swift */; };
 		AFEF43F524AE1EBF0028A48D /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEF43F324AE1EBF0028A48D /* FavouritesViewController.swift */; };
 		AFEF43F624AE1EBF0028A48D /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFEF43F424AE1EBF0028A48D /* FavouritesViewController.xib */; };
+		AFF1CCF024C9B7FF00D23667 /* WomensDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF1CCEF24C9B7FF00D23667 /* WomensDayGreetingConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,7 +124,6 @@
 		AFDF634C24B376C500017240 /* JanmashtamiGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanmashtamiGreetingConstants.swift; sourceTree = "<group>"; };
 		AFDF634E24B376E900017240 /* USAIndeDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USAIndeDayGreetingConstants.swift; sourceTree = "<group>"; };
 		AFDF635024B376FD00017240 /* EidGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EidGreetingConstants.swift; sourceTree = "<group>"; };
-		AFDF635224B3771D00017240 /* WomansDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomansDayGreetingConstants.swift; sourceTree = "<group>"; };
 		AFEF43E024ADFDF40028A48D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AFEF43E124ADFDF40028A48D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AFEF43E624ADFE540028A48D /* BusinessLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLogic.swift; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		AFEF43F024AE1E4F0028A48D /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		AFEF43F324AE1EBF0028A48D /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		AFEF43F424AE1EBF0028A48D /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
+		AFF1CCEF24C9B7FF00D23667 /* WomensDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensDayGreetingConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,7 +300,7 @@
 				AFDF634C24B376C500017240 /* JanmashtamiGreetingConstants.swift */,
 				AFDF634E24B376E900017240 /* USAIndeDayGreetingConstants.swift */,
 				AFDF635024B376FD00017240 /* EidGreetingConstants.swift */,
-				AFDF635224B3771D00017240 /* WomansDayGreetingConstants.swift */,
+				AFF1CCEF24C9B7FF00D23667 /* WomensDayGreetingConstants.swift */,
 			);
 			path = GreetingConstants;
 			sourceTree = "<group>";
@@ -590,7 +590,6 @@
 			files = (
 				AF27343724C492EB007DD997 /* MothersDayQuoteConstants.swift in Sources */,
 				AF27343D24C4933D007DD997 /* WomensDayQuoteConstants.swift in Sources */,
-				AFDF635324B3771D00017240 /* WomansDayGreetingConstants.swift in Sources */,
 				AFEF43F524AE1EBF0028A48D /* FavouritesViewController.swift in Sources */,
 				AFA754DB24B99F2300519A88 /* DetailViewController.swift in Sources */,
 				AF3409A424C70131006D9C73 /* QuoteDetailCell.swift in Sources */,
@@ -620,6 +619,7 @@
 				AFDF634524B374BD00017240 /* FathersDayGreetingConstants.swift in Sources */,
 				AF37837924B226C00001FE96 /* GreetingsHomeConstants.swift in Sources */,
 				AF9C2185248BAAB700E718DB /* GreetWell.xcdatamodeld in Sources */,
+				AFF1CCF024C9B7FF00D23667 /* WomensDayGreetingConstants.swift in Sources */,
 				AF9C217B248BAAB600E718DB /* AppDelegate.swift in Sources */,
 				AF9C217D248BAAB600E718DB /* SceneDelegate.swift in Sources */,
 				AF37244424C183DA0063FCDD /* QuoteListCell.swift in Sources */,
