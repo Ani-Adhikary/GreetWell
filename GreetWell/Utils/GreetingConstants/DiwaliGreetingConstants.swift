@@ -86,4 +86,54 @@ struct DiwaliGreetingConstants {
     
     static let diwaliGreeting15ID = 15
     static let diwaliGreeting15Image = "Diwali15"
+    
+    // MARK: - Greeting 16
+    
+    static let diwaliGreeting16ID = 16
+    static let diwaliGreeting16Image = "Diwali16"
+    
+    // MARK: - Greeting 17
+    
+    static let diwaliGreeting17ID = 17
+    static let diwaliGreeting17Image = "Diwali17"
+    
+    // MARK: - Greeting 18
+    
+    static let diwaliGreeting18ID = 18
+    static let diwaliGreeting18Image = "Diwali18"
+    
+    // MARK: - Greeting 19
+    
+    static let diwaliGreeting19ID = 19
+    static let diwaliGreeting19Image = "Diwali19"
+    
+    // MARK: - Greeting 20
+    
+    static let diwaliGreeting20ID = 20
+    static let diwaliGreeting20Image = "Diwali20"
+    
+    // MARK: - Greeting 21
+    
+    static let diwaliGreeting21ID = 21
+    static let diwaliGreeting21Image = "Diwali21"
+    
+    // MARK: - Greeting 22
+    
+    static let diwaliGreeting22ID = 22
+    static let diwaliGreeting22Image = "Diwali22"
+    
+    // MARK: - Greeting 23
+    
+    static let diwaliGreeting23ID = 23
+    static let diwaliGreeting23Image = "Diwali23"
+    
+    // MARK: - Greeting 24
+    
+    static let diwaliGreeting24ID = 24
+    static let diwaliGreeting24Image = "Diwali24"
+    
+    // MARK: - Greeting 25
+    
+    static let diwaliGreeting25ID = 25
+    static let diwaliGreeting25Image = "Diwali25"
 }
