@@ -93,10 +93,14 @@ struct FathersDayGreetingConstants {
     static let fdayGreeting16ID = 16
     static let fdayGreeting16Image = "FathersDay16"
     
-    // MARK: - Greeting 17
+    // MARK: - Greeting 17 - Home Page
     
     static let fdayGreeting17ID = 17
     static let fdayGreeting17Image = "FathersDay17"
     
+    // MARK: - Greeting 18
+    
+    static let fdayGreeting18ID = 18
+    static let fdayGreeting18Image = "FathersDay18"
     
 }

@@ -14,6 +14,7 @@ struct WomensDayGreetingConstants {
     
     static let wdayGreeting1ID = 1
     static let wdayGreetingText = "Happy Women's Day"
+    static let wdayGreetingAccLabel = "Women's Day"
     static let wdayGreeting1Image = "WomensDay1"
     
     // MARK: - Greeting 2
@@ -41,7 +42,7 @@ struct WomensDayGreetingConstants {
     static let wdayGreeting6ID = 6
     static let wdayGreeting6Image = "WomensDay6"
     
-    // MARK: - Greeting 7
+    // MARK: - Greeting 7 - Home Page
     
     static let wdayGreeting7ID = 7
     static let wdayGreeting7Image = "WomensDay7"
