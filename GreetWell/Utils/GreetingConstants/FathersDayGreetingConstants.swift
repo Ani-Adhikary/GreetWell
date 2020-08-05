@@ -14,6 +14,7 @@ struct FathersDayGreetingConstants {
     
     static let fdayGreeting1ID = 1
     static let fdayGreetingText = "Happy Father's Day"
+    static let fDayGreetingAccLabel = "Fathers Day"
     static let fdayGreeting1Image = "FathersDay01"
     
     // MARK: - Greeting 2
@@ -54,7 +55,7 @@ struct FathersDayGreetingConstants {
     // MARK: - Greeting 9
     
     static let fdayGreeting9ID = 9
-    static let fdayGreeting9Image = "FathersDay08"
+    static let fdayGreeting9Image = "FathersDay09"
     
     // MARK: - Greeting 10
     
@@ -66,6 +67,36 @@ struct FathersDayGreetingConstants {
     static let fdayGreeting11ID = 11
     static let fdayGreeting11Image = "FathersDay11"
     
+    
+    // MARK: - Greeting 12
+    
+    static let fdayGreeting12ID = 12
+    static let fdayGreeting12Image = "FathersDay12"
+    
+    // MARK: - Greeting 13
+    
+    static let fdayGreeting13ID = 13
+    static let fdayGreeting13Image = "FathersDay13"
+    
+    // MARK: - Greeting 14
+    
+    static let fdayGreeting14ID = 14
+    static let fdayGreeting14Image = "FathersDay14"
+    
+    // MARK: - Greeting 15
+    
+    static let fdayGreeting15ID = 15
+    static let fdayGreeting15Image = "FathersDay15"
+    
+    // MARK: - Greeting 16
+    
+    static let fdayGreeting16ID = 16
+    static let fdayGreeting16Image = "FathersDay16"
+    
+    // MARK: - Greeting 17
+    
+    static let fdayGreeting17ID = 17
+    static let fdayGreeting17Image = "FathersDay17"
     
     
 }
