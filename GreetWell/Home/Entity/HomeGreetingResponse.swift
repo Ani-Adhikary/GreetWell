@@ -20,14 +20,14 @@ class HomeGreetingResponse {
         let fathersDayGreetings = getFathersDayGreetings()
         let womensDayGreetings = getWomensDayGreetings()
         let diwaliGreetings = getDiwaliGreetings()
+        let coronaInfo = getCoronaGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
             Greeting(id: GreetingsHomeConstants.greetingHome1ID, greeting: GreetingsHomeConstants.greetingHome1Text, image: GreetingsHomeConstants.greetingHome1Image, additionalInfo: "", greetingType: .birthday, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome2ID, greeting: GreetingsHomeConstants.greetingHome2Text, image: GreetingsHomeConstants.greetingHome2Image, additionalInfo: "", greetingType: .valentinesDay, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome5ID, greeting: GreetingsHomeConstants.greetingHome5Text, image: GreetingsHomeConstants.greetingHome5Image, additionalInfo: "", greetingType: .eid, greetingPageCategory: .homePage, favourite: false),
-                                    
-            Greeting(id: GreetingsHomeConstants.greetingHome7ID, greeting: GreetingsHomeConstants.greetingHome7Text, image: GreetingsHomeConstants.greetingHome7Image, additionalInfo: "", greetingType: .corona, greetingPageCategory: .homePage, favourite: false),
+
             Greeting(id: GreetingsHomeConstants.greetingHome8ID, greeting: GreetingsHomeConstants.greetingHome8Text, image: GreetingsHomeConstants.greetingHome8Image, additionalInfo: "", greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome9ID, greeting: GreetingsHomeConstants.greetingHome9Text, image: GreetingsHomeConstants.greetingHome9Image, additionalInfo: "", greetingType: .janmashtami, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome10ID, greeting: GreetingsHomeConstants.greetingHome10Text, image: GreetingsHomeConstants.greetingHome10Image, additionalInfo: "", greetingType: .ganeshChaturthi, greetingPageCategory: .homePage, favourite: false),
@@ -41,6 +41,7 @@ class HomeGreetingResponse {
         greetings += fathersDayGreetings
         greetings += womensDayGreetings
         greetings += diwaliGreetings
+        //greetings += coronaInfo
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -93,7 +94,8 @@ class HomeGreetingResponse {
             Greeting(id: MothersDayGreetingConstants.mdayGreeting7ID, greeting: MothersDayGreetingConstants.mdayGreetingText, image: MothersDayGreetingConstants.mdayGreeting7Image, additionalInfo: MothersDayGreetingConstants.mDayGreetingAccLabel, greetingType: .mothersDay, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: MothersDayGreetingConstants.mdayGreeting8ID, greeting: MothersDayGreetingConstants.mdayGreetingText, image: MothersDayGreetingConstants.mdayGreeting8Image, additionalInfo: MothersDayGreetingConstants.mDayGreetingAccLabel, greetingType: .mothersDay, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: MothersDayGreetingConstants.mdayGreeting9ID, greeting: MothersDayGreetingConstants.mdayGreetingText, image: MothersDayGreetingConstants.mdayGreeting9Image, additionalInfo: MothersDayGreetingConstants.mDayGreetingAccLabel, greetingType: .mothersDay, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: MothersDayGreetingConstants.mdayGreeting10ID, greeting: MothersDayGreetingConstants.mdayGreetingText, image: MothersDayGreetingConstants.mdayGreeting10Image, additionalInfo: MothersDayGreetingConstants.mDayGreetingAccLabel, greetingType: .mothersDay, greetingPageCategory: .greetingPage, favourite: false)
+            Greeting(id: MothersDayGreetingConstants.mdayGreeting10ID, greeting: MothersDayGreetingConstants.mdayGreetingText, image: MothersDayGreetingConstants.mdayGreeting10Image, additionalInfo: MothersDayGreetingConstants.mDayGreetingAccLabel, greetingType: .mothersDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: MothersDayGreetingConstants.mdayGreeting11ID, greeting: MothersDayGreetingConstants.mdayGreetingText, image: MothersDayGreetingConstants.mdayGreeting11Image, additionalInfo: MothersDayGreetingConstants.mDayGreetingAccLabel, greetingType: .mothersDay, greetingPageCategory: .greetingPage, favourite: false)
         ]
         
         return greetings
@@ -115,9 +117,9 @@ class HomeGreetingResponse {
             Greeting(id: FathersDayGreetingConstants.fdayGreeting12ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting12Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: FathersDayGreetingConstants.fdayGreeting13ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting13Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: FathersDayGreetingConstants.fdayGreeting14ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting14Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: FathersDayGreetingConstants.fdayGreeting15ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting15Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: FathersDayGreetingConstants.fdayGreeting15ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting15Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: FathersDayGreetingConstants.fdayGreeting16ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting16Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: FathersDayGreetingConstants.fdayGreeting17ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting17Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: FathersDayGreetingConstants.fdayGreeting17ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting17Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: FathersDayGreetingConstants.fdayGreeting18ID, greeting: FathersDayGreetingConstants.fdayGreetingText, image: FathersDayGreetingConstants.fdayGreeting18Image, additionalInfo: FathersDayGreetingConstants.fDayGreetingAccLabel, greetingType: .fathersDay, greetingPageCategory: .greetingPage, favourite: false)
         ]
         
@@ -161,6 +163,29 @@ class HomeGreetingResponse {
         Greeting(id: DiwaliGreetingConstants.diwaliGreeting13ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting13Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false),
         Greeting(id: DiwaliGreetingConstants.diwaliGreeting14ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting14Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false),
         Greeting(id: DiwaliGreetingConstants.diwaliGreeting15ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting15Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false)
+        ]
+        return greetings
+    }
+    
+    static func getCoronaGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: CoronaInfoConstants.coronaInfo1ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo1Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo2ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo2Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo3ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo3Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo4ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo4Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo5ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo5Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo6ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo6Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo7ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo7Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo8ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo8Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo9ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo9Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo10ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo10Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo11ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo11Image, greetingType: .corona, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo12ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo12Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo13ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo13Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo14ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo14Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo15ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo15Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo16ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo16Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo17ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo17Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false)
         ]
         return greetings
     }
