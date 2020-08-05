@@ -21,6 +21,7 @@ class HomeGreetingResponse {
         let womensDayGreetings = getWomensDayGreetings()
         let diwaliGreetings = getDiwaliGreetings()
         let coronaInfo = getCoronaGreetings()
+        let janmashtamiGreetings = getJanmashtamiGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
@@ -29,7 +30,6 @@ class HomeGreetingResponse {
             Greeting(id: GreetingsHomeConstants.greetingHome5ID, greeting: GreetingsHomeConstants.greetingHome5Text, image: GreetingsHomeConstants.greetingHome5Image, additionalInfo: "", greetingType: .eid, greetingPageCategory: .homePage, favourite: false),
 
             Greeting(id: GreetingsHomeConstants.greetingHome8ID, greeting: GreetingsHomeConstants.greetingHome8Text, image: GreetingsHomeConstants.greetingHome8Image, additionalInfo: "", greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false),
-            Greeting(id: GreetingsHomeConstants.greetingHome9ID, greeting: GreetingsHomeConstants.greetingHome9Text, image: GreetingsHomeConstants.greetingHome9Image, additionalInfo: "", greetingType: .janmashtami, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome10ID, greeting: GreetingsHomeConstants.greetingHome10Text, image: GreetingsHomeConstants.greetingHome10Image, additionalInfo: "", greetingType: .ganeshChaturthi, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome11ID, greeting: GreetingsHomeConstants.greetingHome11Text, image: GreetingsHomeConstants.greetingHome11Image, additionalInfo: "", greetingType: .thanksgiving, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome12ID, greeting: GreetingsHomeConstants.greetingHome12Text, image: GreetingsHomeConstants.greetingHome12Image, additionalInfo: "", greetingType: .christmas, greetingPageCategory: .homePage, favourite: false),
@@ -42,6 +42,7 @@ class HomeGreetingResponse {
         greetings += womensDayGreetings
         greetings += diwaliGreetings
         greetings += coronaInfo
+        greetings += janmashtamiGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -182,6 +183,28 @@ class HomeGreetingResponse {
             Greeting(id: CoronaInfoConstants.coronaInfo11ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo11Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: CoronaInfoConstants.coronaInfo12ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo12Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: CoronaInfoConstants.coronaInfo13ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo13Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false)
+        ]
+        return greetings
+    }
+    
+    static func getJanmashtamiGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting1ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting1Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting2ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting2Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting3ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting3Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting4ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting4Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting5ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting5Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting6ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting6Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting7ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting7Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting8ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting8Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting9ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting9Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting10ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting10Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting11ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting11Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting12ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting12Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting13ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting13Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting14ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting14Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting15ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting15Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: JanmashtamiGreetingConstants.janGreeting16ID, greeting: JanmashtamiGreetingConstants.janGreetingText, image: JanmashtamiGreetingConstants.janGreeting16Image, additionalInfo: JanmashtamiGreetingConstants.janGreetingAccLabel, greetingType: .janmashtami, greetingPageCategory: .greetingPage, favourite: false)
         ]
         return greetings
     }
