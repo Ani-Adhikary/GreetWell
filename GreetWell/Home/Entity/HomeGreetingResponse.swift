@@ -41,7 +41,7 @@ class HomeGreetingResponse {
         greetings += fathersDayGreetings
         greetings += womensDayGreetings
         greetings += diwaliGreetings
-        //greetings += coronaInfo
+        greetings += coronaInfo
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -169,23 +169,19 @@ class HomeGreetingResponse {
     
     static func getCoronaGreetings() -> [Greeting] {
         let greetings = [
-            Greeting(id: CoronaInfoConstants.coronaInfo1ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo1Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo2ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo2Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo3ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo3Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo4ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo4Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo5ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo5Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo6ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo6Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo7ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo7Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo8ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo8Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo9ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo9Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo10ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo10Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo11ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo11Image, greetingType: .corona, greetingPageCategory: .homePage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo12ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo12Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo13ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo13Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo14ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo14Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo15ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo15Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo16ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo16Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: CoronaInfoConstants.coronaInfo17ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaAccLabel, additionalInfo: CoronaInfoConstants.coronaInfo17Image, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false)
+            Greeting(id: CoronaInfoConstants.coronaInfo1ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo1Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo2ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo2Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo3ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo3Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo4ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo4Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo5ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo5Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo6ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo6Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo7ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo7Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo8ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo8Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo9ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo9Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo10ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo10Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo11ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo11Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo12ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo12Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: CoronaInfoConstants.coronaInfo13ID, greeting: CoronaInfoConstants.coronaInfoText, image: CoronaInfoConstants.coronaInfo13Image, additionalInfo: CoronaInfoConstants.coronaAccLabel, greetingType: .corona, greetingPageCategory: .greetingPage, favourite: false)
         ]
         return greetings
     }
