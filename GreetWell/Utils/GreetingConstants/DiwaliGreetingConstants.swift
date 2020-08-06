@@ -92,7 +92,7 @@ struct DiwaliGreetingConstants {
     static let diwaliGreeting16ID = 16
     static let diwaliGreeting16Image = "Diwali16"
     
-    // MARK: - Greeting 17 - Home
+    // MARK: - Greeting 17
     
     static let diwaliGreeting17ID = 17
     static let diwaliGreeting17Image = "Diwali17"
@@ -117,7 +117,7 @@ struct DiwaliGreetingConstants {
     static let diwaliGreeting21ID = 21
     static let diwaliGreeting21Image = "Diwali21"
     
-    // MARK: - Greeting 22
+    // MARK: - Greeting 22 - Home
     
     static let diwaliGreeting22ID = 22
     static let diwaliGreeting22Image = "Diwali22"

@@ -77,4 +77,89 @@ struct WomensDayGreetingConstants {
     static let wdayGreeting13ID = 13
     static let wdayGreeting13Image = "WomensDay13"
     
+    // MARK: - Greeting 14
+    
+    static let wdayGreeting14ID = 14
+    static let wdayGreeting14Image = "WomensDay14"
+    
+    // MARK: - Greeting 15
+    
+    static let wdayGreeting15ID = 15
+    static let wdayGreeting15Image = "WomensDay15"
+    
+    // MARK: - Greeting 16
+    
+    static let wdayGreeting16ID = 16
+    static let wdayGreeting16Image = "WomensDay16"
+    
+    // MARK: - Greeting 17
+    
+    static let wdayGreeting17ID = 17
+    static let wdayGreeting17Image = "WomensDay17"
+    
+    // MARK: - Greeting 18
+    
+    static let wdayGreeting18ID = 18
+    static let wdayGreeting18Image = "WomensDay18"
+    
+    // MARK: - Greeting 19
+    
+    static let wdayGreeting19ID = 19
+    static let wdayGreeting19Image = "WomensDay19"
+    
+    // MARK: - Greeting 20
+    
+    static let wdayGreeting20ID = 20
+    static let wdayGreeting20Image = "WomensDay20"
+    
+    // MARK: - Greeting 21
+    
+    static let wdayGreeting21ID = 21
+    static let wdayGreeting21Image = "WomensDay21"
+    
+    // MARK: - Greeting 22
+    
+    static let wdayGreeting22ID = 22
+    static let wdayGreeting22Image = "WomensDay22"
+    
+    // MARK: - Greeting 23
+    
+    static let wdayGreeting23ID = 23
+    static let wdayGreeting23Image = "WomensDay23"
+    
+    // MARK: - Greeting 24
+    
+    static let wdayGreeting24ID = 24
+    static let wdayGreeting24Image = "WomensDay24"
+    
+    // MARK: - Greeting 25
+    
+    static let wdayGreeting25ID = 25
+    static let wdayGreeting25Image = "WomensDay25"
+    
+    // MARK: - Greeting 26
+    
+    static let wdayGreeting26ID = 26
+    static let wdayGreeting26Image = "WomensDay26"
+    
+    // MARK: - Greeting 27
+    
+    static let wdayGreeting27ID = 27
+    static let wdayGreeting27Image = "WomensDay27"
+    
+    // MARK: - Greeting 28
+    
+    static let wdayGreeting28ID = 28
+    static let wdayGreeting28Image = "WomensDay28"
+    
+    // MARK: - Greeting 29
+    
+    static let wdayGreeting29ID = 29
+    static let wdayGreeting29Image = "WomensDay29"
+    
+    // MARK: - Greeting 30
+    
+    static let wdayGreeting30ID = 30
+    static let wdayGreeting30Image = "WomensDay30"
+    
 }
