@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum Mode {
+    case view
+    case select
+}
+
 class IndividualGreetingHomeVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!    
@@ -17,6 +22,37 @@ class IndividualGreetingHomeVC: UIViewController {
     
     var greetings = [Greeting]()
     var greetingFromHome = Greeting()
+    
+    var mMode: Mode = .view {
+        didSet {
+            switch mMode {
+            case .view:
+                //          for (key, value) in dictionarySelectedIndecPath {
+                //            if value {
+                //              collectionView.deselectItem(at: key, animated: true)
+                //            }
+                //          }
+                //
+                //          dictionarySelectedIndecPath.removeAll()
+                
+                selectBarButton.title = "Select"
+                navigationItem.leftBarButtonItem = nil
+                collectionView.allowsMultipleSelection = false
+                shareBarButtonItem.isEnabled = false
+                favBarButtonItem.isEnabled = false
+            case .select:
+                selectBarButton.title = "Cancel"
+                collectionView.allowsMultipleSelection = true
+                shareBarButtonItem.isEnabled = true
+                favBarButtonItem.isEnabled = true
+            }
+        }
+    }
+    
+    lazy var selectBarButton: UIBarButtonItem = {
+        let barButtonItem = UIBarButtonItem(title: "Select", style: .plain, target: self, action: #selector(selectButtonClicked(_:)))
+        return barButtonItem
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +72,8 @@ class IndividualGreetingHomeVC: UIViewController {
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.hidesBackButton = false
         navigationController?.isNavigationBarHidden = false
+        
+        navigationItem.rightBarButtonItem = selectBarButton
     }
     
     func setupCollectionView() {
@@ -66,6 +104,10 @@ class IndividualGreetingHomeVC: UIViewController {
         print("fav button tapped--------------")
     }
     
+    @objc func selectButtonClicked(_ sender: UIBarButtonItem) {
+        mMode = mMode == .view ? .select : .view
+    }
+    
 }
 
 extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -74,10 +116,10 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let homeCell = collectionView.dequeueReusableCell(withReuseIdentifier: FavCell.identifier, for: indexPath) as! FavCell
+        let greetingCell = collectionView.dequeueReusableCell(withReuseIdentifier: FavCell.identifier, for: indexPath) as! FavCell
         let greetVal = greetings[indexPath.row]
-        homeCell.setupData(greeting: greetVal)
-        return homeCell
+        greetingCell.setupData(greeting: greetVal)
+        return greetingCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -87,7 +129,6 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
         navigationController?.pushViewController(detailVC, animated: true)
         collectionView.deselectItem(at: indexPath, animated: true)
     }
-    
 }
 
 extension IndividualGreetingHomeVC: CustomLayoutDelegate {

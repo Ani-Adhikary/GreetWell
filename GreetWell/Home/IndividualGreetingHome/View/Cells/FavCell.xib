@@ -21,7 +21,7 @@
                     </imageView>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TO6-hV-BWM" userLabel="Highlight Indicator">
                         <rect key="frame" x="0.0" y="0.0" width="206" height="195"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="0.46840218321917809" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LikeFilled" translatesAutoresizingMaskIntoConstraints="NO" id="tSJ-ns-jaq">
                         <rect key="frame" x="176" y="10" width="20" height="20"/>
