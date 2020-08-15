@@ -9,8 +9,12 @@
 import UIKit
 
 class IndividualGreetingHomeVC: UIViewController {
-
-    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var collectionView: UICollectionView!    
+    @IBOutlet weak var toolbar: UIToolbar!
+    @IBOutlet weak var shareBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var favBarButtonItem: UIBarButtonItem!
+    
     var greetings = [Greeting]()
     var greetingFromHome = Greeting()
     
@@ -18,6 +22,7 @@ class IndividualGreetingHomeVC: UIViewController {
         super.viewDidLoad()
         setupGreetings()
         setupCollectionView()
+        setupBarButtonItems()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +50,22 @@ class IndividualGreetingHomeVC: UIViewController {
     private func setupGreetings() {
         greetings = HomeGreetingResponse.getGreetings(greetType: greetingFromHome.greetingType, greetingPageCategory: GreetingPageCategory.greetingPage)
     }
+    
+    private func setupBarButtonItems() {
+        shareBarButtonItem.isEnabled = false
+        favBarButtonItem.isEnabled = false
+        shareBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .disabled)
+        favBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .disabled)
+    }
+    
+    @IBAction func shareBarButtonClicked(_ sender: UIBarButtonItem) {
+        print("share button tapped--------------")
+    }
+    
+    @IBAction func favBarButtonClicked(_ sender: UIBarButtonItem) {
+        print("fav button tapped--------------")
+    }
+    
 }
 
 extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -70,9 +91,9 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
 }
 
 extension IndividualGreetingHomeVC: CustomLayoutDelegate {
-  func collectionView(_ collectionView: UICollectionView, sizeOfPhotoAtIndexPath indexPath: IndexPath) -> CGSize {
-    return UIImage(named: greetings[indexPath.item].greetingImage)!.size
-  }
+    func collectionView(_ collectionView: UICollectionView, sizeOfPhotoAtIndexPath indexPath: IndexPath) -> CGSize {
+        return UIImage(named: greetings[indexPath.item].greetingImage)!.size
+    }
 }
 
 

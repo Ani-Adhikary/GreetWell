@@ -10,6 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndividualGreetingHomeVC" customModule="GreetWell" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="awG-yb-0Yp" id="OsK-h1-2qo"/>
+                <outlet property="favBarButtonItem" destination="D9q-SW-baR" id="4io-cG-mJQ"/>
+                <outlet property="shareBarButtonItem" destination="oLH-hK-19a" id="NgF-aw-e1r"/>
+                <outlet property="toolbar" destination="uF4-Op-cMO" id="ULT-bC-YDS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +25,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="awG-yb-0Yp">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="827"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="08h-i8-mbC">
                                 <size key="itemSize" width="50" height="50"/>
@@ -31,25 +34,48 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uF4-Op-cMO">
+                            <rect key="frame" x="0.0" y="827" width="414" height="49"/>
+                            <items>
+                                <barButtonItem image="square.and.arrow.up" catalog="system" id="oLH-hK-19a">
+                                    <connections>
+                                        <action selector="shareBarButtonClicked:" destination="-1" id="RMj-VD-Y7C"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="WAq-p5-DLI"/>
+                                <barButtonItem image="heart" catalog="system" id="D9q-SW-baR">
+                                    <connections>
+                                        <action selector="favBarButtonClicked:" destination="-1" id="MqC-u0-kDm"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="awG-yb-0Yp" secondAttribute="bottom" id="GxF-86-pll"/>
-                        <constraint firstAttribute="trailing" secondItem="awG-yb-0Yp" secondAttribute="trailing" id="La6-4l-qNm"/>
-                        <constraint firstItem="awG-yb-0Yp" firstAttribute="top" secondItem="b4s-Nq-rtG" secondAttribute="top" id="VuL-JM-bVH"/>
-                        <constraint firstItem="awG-yb-0Yp" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="pf6-03-RTI"/>
+                        <constraint firstItem="uF4-Op-cMO" firstAttribute="top" secondItem="awG-yb-0Yp" secondAttribute="bottom" id="3f2-iw-OEj"/>
+                        <constraint firstItem="awG-yb-0Yp" firstAttribute="top" secondItem="b4s-Nq-rtG" secondAttribute="top" id="K9K-4C-xRB"/>
+                        <constraint firstAttribute="bottom" secondItem="uF4-Op-cMO" secondAttribute="bottom" constant="20" id="MI2-zT-Hv7"/>
+                        <constraint firstAttribute="trailing" secondItem="uF4-Op-cMO" secondAttribute="trailing" id="Qbh-o8-R71"/>
+                        <constraint firstItem="awG-yb-0Yp" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="TDT-Ur-5yM"/>
+                        <constraint firstAttribute="trailing" secondItem="awG-yb-0Yp" secondAttribute="trailing" id="itp-Hm-LYs"/>
+                        <constraint firstItem="uF4-Op-cMO" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="yuV-Zi-9xp"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="b4s-Nq-rtG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EE3-gA-hW5"/>
-                <constraint firstItem="b4s-Nq-rtG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="USW-kz-nPn"/>
-                <constraint firstItem="b4s-Nq-rtG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ccC-L5-WmL"/>
-                <constraint firstAttribute="bottom" secondItem="b4s-Nq-rtG" secondAttribute="bottom" id="koy-8M-MEa"/>
+                <constraint firstItem="b4s-Nq-rtG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3BU-V6-lim"/>
+                <constraint firstItem="b4s-Nq-rtG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6nQ-Bu-QBl"/>
+                <constraint firstAttribute="bottom" secondItem="b4s-Nq-rtG" secondAttribute="bottom" id="Ltv-Zu-ZlA"/>
+                <constraint firstItem="b4s-Nq-rtG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XJj-Yp-mwg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
         </view>
     </objects>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+    </resources>
 </document>
