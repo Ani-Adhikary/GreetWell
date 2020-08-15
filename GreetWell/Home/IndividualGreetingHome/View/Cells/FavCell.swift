@@ -12,7 +12,7 @@ class FavCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var highlightIndicator: UIView!
-    //@IBOutlet weak var selectIndicator: UIImageView!
+    @IBOutlet weak var selectIndicator: UIImageView!
     @IBOutlet weak var favIndicator: UIImageView!
     
     override func awakeFromNib() {
@@ -28,7 +28,7 @@ class FavCell: UICollectionViewCell {
     override var isSelected: Bool {
       didSet {
         highlightIndicator.isHidden = !isSelected
-        //selectIndicator.isHidden = !isSelected
+        selectIndicator.isHidden = !isSelected
       }
     }
     
