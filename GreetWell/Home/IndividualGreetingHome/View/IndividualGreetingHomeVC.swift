@@ -37,15 +37,13 @@ class IndividualGreetingHomeVC: UIViewController {
                 dictionarySelectedIndecPath.removeAll()
                 
                 selectBarButton.title = "Select"
-                navigationItem.leftBarButtonItem = nil
+                //navigationItem.leftBarButtonItem = nil
                 collectionView.allowsMultipleSelection = false
                 shareBarButtonItem.isEnabled = false
                 favBarButtonItem.isEnabled = false
             case .select:
                 selectBarButton.title = "Cancel"
                 collectionView.allowsMultipleSelection = true
-                //                shareBarButtonItem.isEnabled = true
-                //                favBarButtonItem.isEnabled = true
             }
         }
     }
@@ -128,12 +126,6 @@ class IndividualGreetingHomeVC: UIViewController {
         }
         self.present(activityViewController, animated: true, completion: nil)
         
-//        activityViewController.completionWithItemsHandler = { activity, success, items, error in
-//            print("activity: \(activity), success: \(success), items: \(items), error: \(error)")
-//
-//            self.mMode = .view
-//        }
-        
         activityViewController.completionWithItemsHandler = { activity, success, items, error in
             self.mMode = .view
         }
@@ -172,7 +164,6 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
         
         switch mMode {
         case .view:
-            collectionView.deselectItem(at: indexPath, animated: true)
             let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
             detailVC.greetings = greetings
             detailVC.greetingFromHome = greetings[indexPath.row]
