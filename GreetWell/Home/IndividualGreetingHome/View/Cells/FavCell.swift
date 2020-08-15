@@ -19,6 +19,19 @@ class FavCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
+    override var isHighlighted: Bool {
+      didSet {
+        highlightIndicator.isHidden = !isHighlighted
+      }
+    }
+    
+    override var isSelected: Bool {
+      didSet {
+        highlightIndicator.isHidden = !isSelected
+        //selectIndicator.isHidden = !isSelected
+      }
+    }
+    
     static var nib: UINib {
         return UINib(nibName: identifier, bundle: nil)
     }

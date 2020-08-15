@@ -22,18 +22,19 @@ class IndividualGreetingHomeVC: UIViewController {
     
     var greetings = [Greeting]()
     var greetingFromHome = Greeting()
+    var dictionarySelectedIndecPath: [IndexPath: Bool] = [:]
     
     var mMode: Mode = .view {
         didSet {
             switch mMode {
             case .view:
-                //          for (key, value) in dictionarySelectedIndecPath {
-                //            if value {
-                //              collectionView.deselectItem(at: key, animated: true)
-                //            }
-                //          }
-                //
-                //          dictionarySelectedIndecPath.removeAll()
+               for (key, value) in dictionarySelectedIndecPath {
+                 if value {
+                   collectionView.deselectItem(at: key, animated: true)
+                 }
+               }
+               
+               dictionarySelectedIndecPath.removeAll()
                 
                 selectBarButton.title = "Select"
                 navigationItem.leftBarButtonItem = nil
@@ -123,11 +124,30 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
-        detailVC.greetings = greetings
-        detailVC.greetingFromHome = greetings[indexPath.row]
-        navigationController?.pushViewController(detailVC, animated: true)
-        collectionView.deselectItem(at: indexPath, animated: true)
+//        let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+//        detailVC.greetings = greetings
+//        detailVC.greetingFromHome = greetings[indexPath.row]
+//        navigationController?.pushViewController(detailVC, animated: true)
+//        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        switch mMode {
+        case .view:
+          collectionView.deselectItem(at: indexPath, animated: true)
+          let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+          detailVC.greetings = greetings
+          detailVC.greetingFromHome = greetings[indexPath.row]
+          navigationController?.pushViewController(detailVC, animated: true)
+          collectionView.deselectItem(at: indexPath, animated: true)
+        case .select:
+          dictionarySelectedIndecPath[indexPath] = true
+          //print("Item selected")
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+      if mMode == .select {
+        dictionarySelectedIndecPath[indexPath] = false
+      }
     }
 }
 
