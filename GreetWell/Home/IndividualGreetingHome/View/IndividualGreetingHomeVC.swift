@@ -98,7 +98,36 @@ class IndividualGreetingHomeVC: UIViewController {
     }
     
     @IBAction func shareBarButtonClicked(_ sender: UIBarButtonItem) {
-        print("share button tapped--------------")
+        //print("share button tapped--------------")
+        
+        var shareSelectedIndexPaths: [IndexPath] = []
+        for (key, value) in dictionarySelectedIndecPath {
+          if value {
+            shareSelectedIndexPaths.append(key)
+          }
+        }
+        
+        var images = [UIImage]()
+        for indexPath in shareSelectedIndexPaths {
+            let greetImg = greetings[indexPath.row].greetingImage
+            print("greetImg --------------- \(greetImg)")
+            guard let img = UIImage(named: greetImg) else {
+                print("Here in return---------------")
+                return
+            }
+            images.append(img)
+        }
+        
+        print("images count---------- \(images.count)")
+
+        let activityViewController = UIActivityViewController(activityItems: images, applicationActivities: nil)
+        
+        if DeviceEnv.isIpad {
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        }
+        self.present(activityViewController, animated: true, completion: nil)
+        
     }
     
     @IBAction func favBarButtonClicked(_ sender: UIBarButtonItem) {
