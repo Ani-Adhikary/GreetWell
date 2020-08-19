@@ -13,23 +13,19 @@ class QuotesDetailVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     let layout = UICollectionViewFlowLayout()
     var quotes = [Quote]()
-    var quoteTypeFromHome = QuoteList()
+    var quoteTypeFromHome: QuoteType = .birthday
     var selectedQuoteToShare: Quote?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        quotes = QuotesResponse.getQuotes(quoteType: quoteTypeFromHome.listType)
+        quotes = QuotesResponse.getQuotes(quoteType: quoteTypeFromHome)
         setupNavBar()
         setupCollectionView()
     }
-    
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
 
     func setupNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.topViewController?.title = QuotesResponse.getIndividualQuotesPageTitle(quoteType: quoteTypeFromHome.listType)
+        navigationController?.topViewController?.title = QuotesResponse.getIndividualQuotesPageTitle(quoteType: quoteTypeFromHome)
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.hidesBackButton = false
         navigationController?.isNavigationBarHidden = false

@@ -14,13 +14,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="auC-ee-sIY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="auC-ee-sIY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2ML-ly-F1v"/>
+                            <constraint firstItem="auC-ee-sIY" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2lm-Ai-dRL"/>
+                            <constraint firstItem="auC-ee-sIY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Akq-En-Vp8"/>
+                            <constraint firstAttribute="bottom" secondItem="auC-ee-sIY" secondAttribute="bottom" id="urv-JN-7a6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Splash" width="451" height="689"/>
+    </resources>
 </document>

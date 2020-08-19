@@ -41,6 +41,8 @@
 		AF48C0AF24B9E9EC00DE8AE9 /* GreetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48C0AD24B9E9EC00DE8AE9 /* GreetingCell.swift */; };
 		AF48C0B024B9E9EC00DE8AE9 /* GreetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF48C0AE24B9E9EC00DE8AE9 /* GreetingCell.xib */; };
 		AF48C0B224B9F1DA00DE8AE9 /* DeviceEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48C0B124B9F1DA00DE8AE9 /* DeviceEnv.swift */; };
+		AF98FBA024ED24E500ADEF12 /* FavQuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98FB9E24ED24E500ADEF12 /* FavQuotesVC.swift */; };
+		AF98FBA124ED24E500ADEF12 /* FavQuotesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF98FB9F24ED24E500ADEF12 /* FavQuotesVC.xib */; };
 		AF9C217B248BAAB600E718DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C217A248BAAB600E718DB /* AppDelegate.swift */; };
 		AF9C217D248BAAB600E718DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C217C248BAAB600E718DB /* SceneDelegate.swift */; };
 		AF9C2185248BAAB700E718DB /* GreetWell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2183248BAAB700E718DB /* GreetWell.xcdatamodeld */; };
@@ -106,6 +108,8 @@
 		AF48C0AD24B9E9EC00DE8AE9 /* GreetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingCell.swift; sourceTree = "<group>"; };
 		AF48C0AE24B9E9EC00DE8AE9 /* GreetingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingCell.xib; sourceTree = "<group>"; };
 		AF48C0B124B9F1DA00DE8AE9 /* DeviceEnv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceEnv.swift; sourceTree = "<group>"; };
+		AF98FB9E24ED24E500ADEF12 /* FavQuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavQuotesVC.swift; sourceTree = "<group>"; };
+		AF98FB9F24ED24E500ADEF12 /* FavQuotesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavQuotesVC.xib; sourceTree = "<group>"; };
 		AF9C2177248BAAB600E718DB /* GreetWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreetWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9C217A248BAAB600E718DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF9C217C248BAAB600E718DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 		AF37242824C174930063FCDD /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				AF98FB9C24ED245000ADEF12 /* FavQuotes */,
 				AF37242C24C1752E0063FCDD /* Detail */,
 				AF37242B24C175150063FCDD /* IndividualQuotesHome */,
 				AF37242924C174A30063FCDD /* QuoteList */,
@@ -333,6 +338,23 @@
 				AF48C0AE24B9E9EC00DE8AE9 /* GreetingCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		AF98FB9C24ED245000ADEF12 /* FavQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				AF98FB9D24ED246100ADEF12 /* View */,
+			);
+			path = FavQuotes;
+			sourceTree = "<group>";
+		};
+		AF98FB9D24ED246100ADEF12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF98FB9E24ED24E500ADEF12 /* FavQuotesVC.swift */,
+				AF98FB9F24ED24E500ADEF12 /* FavQuotesVC.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AF9C216E248BAAB600E718DB = {
@@ -565,6 +587,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF98FBA124ED24E500ADEF12 /* FavQuotesVC.xib in Resources */,
 				AFEF43EF24ADFE5F0028A48D /* CommonErrorViewController.xib in Resources */,
 				AF364D7124BDC51F002AE701 /* FavCell.xib in Resources */,
 				AFEF43F624AE1EBF0028A48D /* FavouritesViewController.xib in Resources */,
@@ -617,6 +640,7 @@
 				AF3409A724C72652006D9C73 /* UIImageExtension.swift in Sources */,
 				AF37243124C175DE0063FCDD /* QuotesListViewController.swift in Sources */,
 				AF27343B24C49312007DD997 /* FathersDayQuoteConstants.swift in Sources */,
+				AF98FBA024ED24E500ADEF12 /* FavQuotesVC.swift in Sources */,
 				AF18768924B2497000BD4E97 /* MothersDayGreetingConstants.swift in Sources */,
 				AFEF43EE24ADFE5F0028A48D /* CommonErrorViewController.swift in Sources */,
 				AFDF634724B375C800017240 /* ValentinesDayGreetingConstants.swift in Sources */,

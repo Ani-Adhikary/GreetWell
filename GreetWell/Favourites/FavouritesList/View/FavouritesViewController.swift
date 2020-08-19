@@ -68,8 +68,8 @@ extension FavouritesViewController: UITableViewDataSource, UITableViewDelegate {
             let quotesDetailVC = QuotesDetailVC(nibName: "QuotesDetailVC", bundle: nil)
             navigationController?.pushViewController(quotesDetailVC, animated: true)
         case 1:
-            let quotesDetailVC = QuotesDetailVC(nibName: "QuotesDetailVC", bundle: nil)
-            navigationController?.pushViewController(quotesDetailVC, animated: true)
+            let quotesVC = FavQuotesVC(nibName: "FavQuotesVC", bundle: nil)
+            navigationController?.pushViewController(quotesVC, animated: true)
         default:
             print("Not found")
         }

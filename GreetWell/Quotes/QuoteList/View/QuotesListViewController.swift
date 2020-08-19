@@ -67,12 +67,12 @@ extension QuotesListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //        let individualQuotesHomeVC = IndividualQuotesHomeVC(nibName: "IndividualQuotesHomeVC", bundle: nil)
-        //        individualQuotesHomeVC.quoteTypeFromHome = greetingList[indexPath.row]
-        //        navigationController?.pushViewController(individualQuotesHomeVC, animated: true)
+        //                let individualQuotesHomeVC = IndividualQuotesHomeVC(nibName: "IndividualQuotesHomeVC", bundle: nil)
+        //                individualQuotesHomeVC.quoteTypeFromHome = greetingList[indexPath.row]
+        //                navigationController?.pushViewController(individualQuotesHomeVC, animated: true)
         
         let quotesDetailVC = QuotesDetailVC(nibName: "QuotesDetailVC", bundle: nil)
-        quotesDetailVC.quoteTypeFromHome = greetingList[indexPath.row]
+        quotesDetailVC.quoteTypeFromHome = greetingList[indexPath.row].listType
         navigationController?.pushViewController(quotesDetailVC, animated: true)
         
         tableView.deselectRow(at: indexPath, animated: true)
