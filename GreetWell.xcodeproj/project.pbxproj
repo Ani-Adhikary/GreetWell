@@ -539,6 +539,7 @@
 				AF9C2173248BAAB600E718DB /* Sources */,
 				AF9C2174248BAAB600E718DB /* Frameworks */,
 				AF9C2175248BAAB600E718DB /* Resources */,
+				AF98FBA224ED323A00ADEF12 /* Build No Script */,
 			);
 			buildRules = (
 			);
@@ -608,6 +609,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF98FBA224ED323A00ADEF12 /* Build No Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build No Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(date -u \"+%Y%m%d%H%M\")\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF9C2173248BAAB600E718DB /* Sources */ = {
@@ -796,7 +818,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = W3BU4T6J77;
 				INFOPLIST_FILE = GreetWell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -806,6 +829,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aniadhikary.GreetWell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GreetwellDistProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -815,7 +839,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = W3BU4T6J77;
 				INFOPLIST_FILE = GreetWell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -825,6 +850,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aniadhikary.GreetWell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GreetwellDistProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
