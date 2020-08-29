@@ -42,7 +42,7 @@ struct HalloweenGreetingConstants {
     static let halloweenGreeting6ID = 6
     static let halloweenGreeting6Image = "Halloween6"
     
-    // MARK: - Greeting 7
+    // MARK: - Greeting 7 - Home
     
     static let halloweenGreeting7ID = 7
     static let halloweenGreeting7Image = "Halloween7"
@@ -56,5 +56,45 @@ struct HalloweenGreetingConstants {
     
     static let halloweenGreeting9ID = 9
     static let halloweenGreeting9Image = "Halloween9"
+    
+    // MARK: - Greeting 10
+    
+    static let halloweenGreeting10ID = 10
+    static let halloweenGreeting10Image = "Halloween10"
+    
+    // MARK: - Greeting 11
+    
+    static let halloweenGreeting11ID = 11
+    static let halloweenGreeting11Image = "Halloween11"
+    
+    // MARK: - Greeting 12
+    
+    static let halloweenGreeting12ID = 12
+    static let halloweenGreeting12Image = "Halloween12"
+    
+    // MARK: - Greeting 13
+    
+    static let halloweenGreeting13ID = 13
+    static let halloweenGreeting13Image = "Halloween13"
+    
+    // MARK: - Greeting 14
+    
+    static let halloweenGreeting14ID = 14
+    static let halloweenGreeting14Image = "Halloween14"
+    
+    // MARK: - Greeting 15
+    
+    static let halloweenGreeting15ID = 15
+    static let halloweenGreeting15Image = "Halloween15"
+    
+    // MARK: - Greeting 16
+    
+    static let halloweenGreeting16ID = 16
+    static let halloweenGreeting16Image = "Halloween16"
+    
+    // MARK: - Greeting 17
+    
+    static let halloweenGreeting17ID = 17
+    static let halloweenGreeting17Image = "Halloween17"
     
 }

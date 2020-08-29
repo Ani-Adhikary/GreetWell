@@ -37,7 +37,7 @@ struct EasterGreetingConstants {
     static let easterGreeting5ID = 5
     static let easterGreeting5Image = "Easter5"
     
-    // MARK: - Greeting 6
+    // MARK: - Greeting 6 - Home
     
     static let easterGreeting6ID = 6
     static let easterGreeting6Image = "Easter6"
