@@ -24,12 +24,12 @@ class HomeGreetingResponse {
         let janmashtamiGreetings = getJanmashtamiGreetings()
         let halloweenGreetings = getHalloweenGreetings()
         let easterGreetings = getEasterGreetings()
+        let eidGreetings = getEidGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
             Greeting(id: GreetingsHomeConstants.greetingHome1ID, greeting: GreetingsHomeConstants.greetingHome1Text, image: GreetingsHomeConstants.greetingHome1Image, additionalInfo: "", greetingType: .birthday, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome2ID, greeting: GreetingsHomeConstants.greetingHome2Text, image: GreetingsHomeConstants.greetingHome2Image, additionalInfo: "", greetingType: .valentinesDay, greetingPageCategory: .homePage, favourite: false),
-            Greeting(id: GreetingsHomeConstants.greetingHome5ID, greeting: GreetingsHomeConstants.greetingHome5Text, image: GreetingsHomeConstants.greetingHome5Image, additionalInfo: "", greetingType: .eid, greetingPageCategory: .homePage, favourite: false),
             
             Greeting(id: GreetingsHomeConstants.greetingHome8ID, greeting: GreetingsHomeConstants.greetingHome8Text, image: GreetingsHomeConstants.greetingHome8Image, additionalInfo: "", greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome10ID, greeting: GreetingsHomeConstants.greetingHome10Text, image: GreetingsHomeConstants.greetingHome10Image, additionalInfo: "", greetingType: .ganeshChaturthi, greetingPageCategory: .homePage, favourite: false),
@@ -47,6 +47,7 @@ class HomeGreetingResponse {
         greetings += janmashtamiGreetings
         greetings += halloweenGreetings
         greetings += easterGreetings
+        greetings += eidGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -252,9 +253,9 @@ class HomeGreetingResponse {
             Greeting(id: EasterGreetingConstants.easterGreeting1ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting1Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EasterGreetingConstants.easterGreeting2ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting2Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EasterGreetingConstants.easterGreeting3ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting3Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: EasterGreetingConstants.easterGreeting4ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting4Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EasterGreetingConstants.easterGreeting4ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting4Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: EasterGreetingConstants.easterGreeting5ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting5Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: EasterGreetingConstants.easterGreeting6ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting6Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: EasterGreetingConstants.easterGreeting6ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting6Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EasterGreetingConstants.easterGreeting7ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting7Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EasterGreetingConstants.easterGreeting8ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting8Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EasterGreetingConstants.easterGreeting9ID, greeting: EasterGreetingConstants.easterGreetingText, image: EasterGreetingConstants.easterGreeting9Image, additionalInfo: EasterGreetingConstants.easterGreetingAccLabel, greetingType: .easter, greetingPageCategory: .greetingPage, favourite: false),
@@ -270,14 +271,43 @@ class HomeGreetingResponse {
         return greetings
     }
     
-    static func getAnyGreetings() -> [Greeting] {
+    static func getUSIndependenceDayGreetings() -> [Greeting] {
         let greetings = [
             Greeting(id: DiwaliGreetingConstants.diwaliGreeting1ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting1Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false)
         ]
         return greetings
     }
     
+    static func getEidGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: EidGreetingConstants.eidGreeting1ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting1Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting2ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting2Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting3ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting3Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting4ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting4Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting5ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting5Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting6ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting6Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting7ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting7Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting8ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting8Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting9ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting9Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting10ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting10Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting11ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting11Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting12ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting12Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting13ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting13Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting14ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting14Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting15ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting15Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting16ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting16Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: EidGreetingConstants.eidGreeting32ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting32Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .homePage, favourite: false)
+        ]
+        return greetings
+    }
     
+    static func getAnyGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: DiwaliGreetingConstants.diwaliGreeting1ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting1Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false)
+        ]
+        return greetings
+    }
+                
     static func getIndividualGreetingsPageTitle(greetType: GreetingType) -> String {
         switch greetType {
         case .birthday:
