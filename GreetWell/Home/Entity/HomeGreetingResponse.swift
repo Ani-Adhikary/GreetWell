@@ -25,11 +25,11 @@ class HomeGreetingResponse {
         let halloweenGreetings = getHalloweenGreetings()
         let easterGreetings = getEasterGreetings()
         let eidGreetings = getEidGreetings()
+        let valentinesDayGreetings = getValentinesDayGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
             Greeting(id: GreetingsHomeConstants.greetingHome1ID, greeting: GreetingsHomeConstants.greetingHome1Text, image: GreetingsHomeConstants.greetingHome1Image, additionalInfo: "", greetingType: .birthday, greetingPageCategory: .homePage, favourite: false),
-            Greeting(id: GreetingsHomeConstants.greetingHome2ID, greeting: GreetingsHomeConstants.greetingHome2Text, image: GreetingsHomeConstants.greetingHome2Image, additionalInfo: "", greetingType: .valentinesDay, greetingPageCategory: .homePage, favourite: false),
             
             Greeting(id: GreetingsHomeConstants.greetingHome8ID, greeting: GreetingsHomeConstants.greetingHome8Text, image: GreetingsHomeConstants.greetingHome8Image, additionalInfo: "", greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome10ID, greeting: GreetingsHomeConstants.greetingHome10Text, image: GreetingsHomeConstants.greetingHome10Image, additionalInfo: "", greetingType: .ganeshChaturthi, greetingPageCategory: .homePage, favourite: false),
@@ -48,6 +48,7 @@ class HomeGreetingResponse {
         greetings += halloweenGreetings
         greetings += easterGreetings
         greetings += eidGreetings
+        greetings += valentinesDayGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -297,6 +298,29 @@ class HomeGreetingResponse {
             Greeting(id: EidGreetingConstants.eidGreeting15ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting15Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EidGreetingConstants.eidGreeting16ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting16Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EidGreetingConstants.eidGreeting32ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting32Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .homePage, favourite: false)
+        ]
+        return greetings
+    }
+    
+    static func getValentinesDayGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: ValentinesDayGreetingConstants.vdayGreeting1ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting1Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting2ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting2Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting3ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting3Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting4ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting4Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting5ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting5Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting6ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting6Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting7ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting7Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting8ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting8Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting9ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting9Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting10ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting10Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting11ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting11Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting12ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting12Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting13ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting13Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting14ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting14Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting15ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting15Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting16ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting16Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .greetingPage, favourite: false),
+           Greeting(id: ValentinesDayGreetingConstants.vdayGreeting30ID, greeting: ValentinesDayGreetingConstants.vdayGreetingText, image: ValentinesDayGreetingConstants.vdayGreeting30Image, additionalInfo: ValentinesDayGreetingConstants.vdayGreetingAccLabel, greetingType: .valentinesDay, greetingPageCategory: .homePage, favourite: false)
         ]
         return greetings
     }

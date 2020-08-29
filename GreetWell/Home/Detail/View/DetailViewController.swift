@@ -57,7 +57,7 @@ class DetailViewController: UIViewController {
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         //right menu
-        let rightMenuIcon = UIBarButtonItem(image: UIImage(named: "Share"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(showMenu))
+        let rightMenuIcon = UIBarButtonItem(image: UIImage(named: "Menu"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(showMenu))
         navigationController?.topViewController?.navigationItem.rightBarButtonItem = rightMenuIcon
     }
     
