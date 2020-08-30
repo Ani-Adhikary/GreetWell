@@ -34,8 +34,8 @@ class MainTabBarController: UITabBarController {
         favouritesVC.tabBarItem.title = "Favourites"
         
         let quotesVC = QuotesListViewController(nibName: "QuotesListViewController", bundle: nil)
-        quotesVC.tabBarItem.image = #imageLiteral(resourceName: "Activity")
-        quotesVC.tabBarItem.selectedImage = #imageLiteral(resourceName: "Activity_Selected")
+        quotesVC.tabBarItem.image = UIImage(named: "Star")
+        quotesVC.tabBarItem.selectedImage = UIImage(named: "StarSelected")
         quotesVC.tabBarItem.title = "Greeting Quotes"
         
         viewControllers = [homeVC, favouritesVC, quotesVC]
