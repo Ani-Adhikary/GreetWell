@@ -13,8 +13,30 @@ struct ChristmasGreetingConstants {
     // MARK: - Greeting 1
     
     static let christmasGreeting1ID = 1
-    static let christmasGreetingText = "Happy Mothers Day"
-    static let christmasGreetingAccLabel = "Mothers Day"
-    static let christmasGreeting1Image = "MothersDay01"
+    static let christmasGreetingText = "Merry Christmas"
+    static let christmasGreetingAccLabel = "Christmas Greetings"
+    static let christmasGreeting1Image = "Christmas01"
+    
+    // MARK: - Greeting 2
+    
+    static let christmasGreeting2ID = 2
+    static let christmasGreeting2Image = "Christmas02"
+    
+    // MARK: - Greeting 3
+    
+    static let christmasGreeting3ID = 3
+    static let christmasGreeting3Image = "Christmas03"
+    
+    // MARK: - Greeting 4
+    
+    static let christmasGreeting4ID = 4
+    static let christmasGreeting4Image = "Christmas04"
+    
+    // MARK: - Greeting 4
+    
+    static let christmasGreeting5ID = 5
+    static let christmasGreeting5Image = "Christmas05"
+    
+    
     
 }
