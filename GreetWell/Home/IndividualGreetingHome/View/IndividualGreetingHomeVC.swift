@@ -15,10 +15,14 @@ enum Mode {
 
 class IndividualGreetingHomeVC: UIViewController {
     
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateLabelHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionView: UICollectionView!    
     @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var shareBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var favBarButtonItem: UIBarButtonItem!
+    
+    
     
     var greetings = [Greeting]()
     var greetingFromHome = Greeting()

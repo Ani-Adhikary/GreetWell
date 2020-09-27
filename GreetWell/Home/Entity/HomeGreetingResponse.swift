@@ -325,6 +325,20 @@ class HomeGreetingResponse {
         return greetings
     }
     
+    static func getChristmasGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: DiwaliGreetingConstants.diwaliGreeting1ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting1Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false)
+        ]
+        return greetings
+    }
+    
+    static func getDurgaPujaGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: DiwaliGreetingConstants.diwaliGreeting1ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting1Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false)
+        ]
+        return greetings
+    }
+    
     static func getAnyGreetings() -> [Greeting] {
         let greetings = [
             Greeting(id: DiwaliGreetingConstants.diwaliGreeting1ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting1Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false)
