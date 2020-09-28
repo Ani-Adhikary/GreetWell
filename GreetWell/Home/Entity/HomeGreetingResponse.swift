@@ -27,13 +27,14 @@ class HomeGreetingResponse {
         let eidGreetings = getEidGreetings()
         let valentinesDayGreetings = getValentinesDayGreetings()
         let christmasGreetings = getChristmasGreetings()
+        let durgaPujaGreetings = getDurgaPujaGreetings()
+        let ganeshChaturthiGreetings = getGaneshChaturthiGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
             Greeting(id: GreetingsHomeConstants.greetingHome1ID, greeting: GreetingsHomeConstants.greetingHome1Text, image: GreetingsHomeConstants.greetingHome1Image, additionalInfo: "", greetingType: .birthday, greetingPageCategory: .homePage, favourite: false),
             
             Greeting(id: GreetingsHomeConstants.greetingHome8ID, greeting: GreetingsHomeConstants.greetingHome8Text, image: GreetingsHomeConstants.greetingHome8Image, additionalInfo: "", greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false),
-            Greeting(id: GreetingsHomeConstants.greetingHome10ID, greeting: GreetingsHomeConstants.greetingHome10Text, image: GreetingsHomeConstants.greetingHome10Image, additionalInfo: "", greetingType: .ganeshChaturthi, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome11ID, greeting: GreetingsHomeConstants.greetingHome11Text, image: GreetingsHomeConstants.greetingHome11Image, additionalInfo: "", greetingType: .thanksgiving, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome13ID, greeting: GreetingsHomeConstants.greetingHome13Text, image: GreetingsHomeConstants.greetingHome13Image, additionalInfo: "", greetingType: .newYear, greetingPageCategory: .homePage, favourite: false)
         ]
@@ -50,6 +51,8 @@ class HomeGreetingResponse {
         greetings += eidGreetings
         greetings += valentinesDayGreetings
         greetings += christmasGreetings
+        greetings += durgaPujaGreetings
+        greetings += ganeshChaturthiGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -351,7 +354,45 @@ class HomeGreetingResponse {
     
     static func getDurgaPujaGreetings() -> [Greeting] {
         let greetings = [
-            Greeting(id: DiwaliGreetingConstants.diwaliGreeting1ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting1Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false)
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting1ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting1Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting2ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting2Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting3ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting3Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting4ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting4Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting5ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting5Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting6ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting6Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting7ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting7Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting8ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting8Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting9ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting9Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting10ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting10Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting11ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting11Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting12ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting12Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting13ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting13Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting14ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting14Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting15ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting15Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DurgaPujaGreetingConstants.durgaPujaGreeting16ID, greeting: DurgaPujaGreetingConstants.durgaPujaGreetingText, image: DurgaPujaGreetingConstants.durgaPujaGreeting16Image, additionalInfo: DurgaPujaGreetingConstants.durgaPujaGreetingAccLabel, greetingType: .durgaPuja, greetingPageCategory: .greetingPage, favourite: false)
+        ]
+        return greetings
+    }
+    
+    static func getGaneshChaturthiGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting1ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting1Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting2ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting2Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting3ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting3Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting4ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting4Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting5ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting5Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting6ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting6Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting7ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting7Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting8ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting8Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting9ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting9Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting10ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting10Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting11ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting11Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting12ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting12Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting13ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting13Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting14ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting14Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting15ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting15Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting16ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting16Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting28ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting28Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .homePage, favourite: false)
         ]
         return greetings
     }
@@ -399,6 +440,8 @@ class HomeGreetingResponse {
             return "Easter"
         case .getWellSoon:
             return "Get Well Soon"
+        case .durgaPuja:
+            return "Durga Puja"
         default:
             return "Not found"
         }
@@ -447,19 +490,20 @@ enum GreetingType: String {
     case valentinesDay
     case womansDay
     case mothersDay
-    case eid
     case fathersDay
     case corona
     case usaIndependenceDay
-    case janmashtami
-    case ganeshChaturthi
     case thanksgiving
     case christmas
     case newYear
-    case diwali
     case halloween
     case easter
     case getWellSoon
+    case janmashtami
+    case ganeshChaturthi
+    case diwali
+    case durgaPuja
+    case eid
 }
 
 enum GreetingPageCategory: String {
