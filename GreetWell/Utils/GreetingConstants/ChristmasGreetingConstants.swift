@@ -91,4 +91,9 @@ struct ChristmasGreetingConstants {
     
     static let christmasGreeting16ID = 16
     static let christmasGreeting16Image = "Christmas16"
+    
+    // MARK: - Greeting 28 - Home
+    
+    static let christmasGreeting28ID = 28
+    static let christmasGreeting28Image = "Christmas28"
 }

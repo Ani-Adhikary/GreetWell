@@ -35,7 +35,6 @@ class HomeGreetingResponse {
             Greeting(id: GreetingsHomeConstants.greetingHome8ID, greeting: GreetingsHomeConstants.greetingHome8Text, image: GreetingsHomeConstants.greetingHome8Image, additionalInfo: "", greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome10ID, greeting: GreetingsHomeConstants.greetingHome10Text, image: GreetingsHomeConstants.greetingHome10Image, additionalInfo: "", greetingType: .ganeshChaturthi, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome11ID, greeting: GreetingsHomeConstants.greetingHome11Text, image: GreetingsHomeConstants.greetingHome11Image, additionalInfo: "", greetingType: .thanksgiving, greetingPageCategory: .homePage, favourite: false),
-            Greeting(id: GreetingsHomeConstants.greetingHome12ID, greeting: GreetingsHomeConstants.greetingHome12Text, image: GreetingsHomeConstants.greetingHome12Image, additionalInfo: "", greetingType: .christmas, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: GreetingsHomeConstants.greetingHome13ID, greeting: GreetingsHomeConstants.greetingHome13Text, image: GreetingsHomeConstants.greetingHome13Image, additionalInfo: "", greetingType: .newYear, greetingPageCategory: .homePage, favourite: false)
         ]
         
@@ -344,7 +343,8 @@ class HomeGreetingResponse {
             Greeting(id: ChristmasGreetingConstants.christmasGreeting13ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting13Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: ChristmasGreetingConstants.christmasGreeting14ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting14Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: ChristmasGreetingConstants.christmasGreeting15ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting15Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: ChristmasGreetingConstants.christmasGreeting16ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting16Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false)
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting16ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting16Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting28ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting28Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .homePage, favourite: false)
         ]
         return greetings
     }
