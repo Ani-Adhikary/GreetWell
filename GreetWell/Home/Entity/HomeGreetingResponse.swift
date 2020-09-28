@@ -26,6 +26,7 @@ class HomeGreetingResponse {
         let easterGreetings = getEasterGreetings()
         let eidGreetings = getEidGreetings()
         let valentinesDayGreetings = getValentinesDayGreetings()
+        let christmasGreetings = getChristmasGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
@@ -49,6 +50,7 @@ class HomeGreetingResponse {
         greetings += easterGreetings
         greetings += eidGreetings
         greetings += valentinesDayGreetings
+        greetings += christmasGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -327,7 +329,22 @@ class HomeGreetingResponse {
     
     static func getChristmasGreetings() -> [Greeting] {
         let greetings = [
-            Greeting(id: DiwaliGreetingConstants.diwaliGreeting1ID, greeting: DiwaliGreetingConstants.diwaliGreetingText, image: DiwaliGreetingConstants.diwaliGreeting1Image, additionalInfo: DiwaliGreetingConstants.diwaliGreetingAccLabel, greetingType: .diwali, greetingPageCategory: .greetingPage, favourite: false)
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting1ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting1Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting2ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting2Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting3ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting3Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting4ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting4Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting5ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting5Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting6ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting6Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting7ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting7Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting8ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting8Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting9ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting9Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting10ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting10Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting11ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting11Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting12ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting12Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting13ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting13Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting14ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting14Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting15ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting15Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ChristmasGreetingConstants.christmasGreeting16ID, greeting: ChristmasGreetingConstants.christmasGreetingText, image: ChristmasGreetingConstants.christmasGreeting16Image, additionalInfo: ChristmasGreetingConstants.christmasGreetingAccLabel, greetingType: .christmas, greetingPageCategory: .greetingPage, favourite: false)
         ]
         return greetings
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,7 +11,6 @@
             <connections>
                 <outlet property="collectionView" destination="awG-yb-0Yp" id="OsK-h1-2qo"/>
                 <outlet property="dateLabel" destination="Fen-74-1yd" id="FE7-CZ-fnr"/>
-                <outlet property="dateLabelHeightConstraint" destination="HRg-EB-Hu7" id="EKn-W4-B09"/>
                 <outlet property="favBarButtonItem" destination="D9q-SW-baR" id="4io-cG-mJQ"/>
                 <outlet property="shareBarButtonItem" destination="oLH-hK-19a" id="NgF-aw-e1r"/>
                 <outlet property="toolbar" destination="uF4-Op-cMO" id="ULT-bC-YDS"/>
@@ -20,14 +19,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4s-Nq-rtG">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="awG-yb-0Yp">
-                            <rect key="frame" x="0.0" y="50" width="375" height="573"/>
+                            <rect key="frame" x="0.0" y="35.666666666666686" width="414" height="744.33333333333326"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="08h-i8-mbC">
                                 <size key="itemSize" width="50" height="50"/>
@@ -37,25 +36,24 @@
                             </collectionViewFlowLayout>
                         </collectionView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-k5-ds6">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="35.666666666666664"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Valentines Day is celebrated on 14th February" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fen-74-1yd">
-                                    <rect key="frame" x="16" y="8" width="343" height="35"/>
+                                    <rect key="frame" x="16" y="8.0000000000000018" width="382" height="20.666666666666671"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="Fen-74-1yd" secondAttribute="bottom" constant="7" id="4O5-ug-BsF"/>
-                                <constraint firstItem="Fen-74-1yd" firstAttribute="top" secondItem="kyT-k5-ds6" secondAttribute="top" constant="8" id="7gX-3a-1k5"/>
-                                <constraint firstAttribute="height" constant="50" id="HRg-EB-Hu7"/>
-                                <constraint firstItem="Fen-74-1yd" firstAttribute="leading" secondItem="kyT-k5-ds6" secondAttribute="leading" constant="16" id="J2Y-GS-1zK"/>
-                                <constraint firstAttribute="trailing" secondItem="Fen-74-1yd" secondAttribute="trailing" constant="16" id="gBR-K8-Wds"/>
+                                <constraint firstItem="Fen-74-1yd" firstAttribute="leading" secondItem="kyT-k5-ds6" secondAttribute="leading" constant="16" id="1Z8-kP-Mqx"/>
+                                <constraint firstItem="Fen-74-1yd" firstAttribute="top" secondItem="kyT-k5-ds6" secondAttribute="top" constant="8" id="Lb7-7A-RsH"/>
+                                <constraint firstAttribute="bottom" secondItem="Fen-74-1yd" secondAttribute="bottom" constant="7" id="lLr-3n-vnC"/>
+                                <constraint firstAttribute="trailing" secondItem="Fen-74-1yd" secondAttribute="trailing" constant="16" id="m5R-HC-ueM"/>
                             </constraints>
                         </view>
                         <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uF4-Op-cMO">
-                            <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="780" width="414" height="49"/>
                             <items>
                                 <barButtonItem image="square.and.arrow.up" catalog="system" id="oLH-hK-19a">
                                     <connections>
@@ -73,30 +71,30 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="uF4-Op-cMO" firstAttribute="top" secondItem="awG-yb-0Yp" secondAttribute="bottom" id="4ng-su-kvc"/>
-                        <constraint firstItem="awG-yb-0Yp" firstAttribute="top" secondItem="kyT-k5-ds6" secondAttribute="bottom" id="5Hw-jL-mh5"/>
-                        <constraint firstItem="kyT-k5-ds6" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="66u-K5-v00"/>
-                        <constraint firstAttribute="trailing" secondItem="awG-yb-0Yp" secondAttribute="trailing" id="8t9-Ur-sbu"/>
-                        <constraint firstItem="uF4-Op-cMO" firstAttribute="top" secondItem="awG-yb-0Yp" secondAttribute="bottom" id="O6W-AT-vEs"/>
-                        <constraint firstAttribute="trailing" secondItem="kyT-k5-ds6" secondAttribute="trailing" id="P6n-Dn-5qS"/>
-                        <constraint firstItem="awG-yb-0Yp" firstAttribute="top" secondItem="kyT-k5-ds6" secondAttribute="bottom" id="PY3-EM-as1"/>
-                        <constraint firstAttribute="bottom" secondItem="uF4-Op-cMO" secondAttribute="bottom" id="TMQ-kD-vz7"/>
-                        <constraint firstItem="awG-yb-0Yp" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="dNt-2U-89J"/>
-                        <constraint firstItem="uF4-Op-cMO" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="n2P-PU-oe1"/>
-                        <constraint firstItem="kyT-k5-ds6" firstAttribute="top" secondItem="b4s-Nq-rtG" secondAttribute="top" id="w7p-3R-mwX"/>
-                        <constraint firstAttribute="trailing" secondItem="uF4-Op-cMO" secondAttribute="trailing" id="wQy-eL-wDy"/>
+                        <constraint firstItem="awG-yb-0Yp" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="4NP-pN-5IT"/>
+                        <constraint firstItem="kyT-k5-ds6" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="H0E-Ke-put"/>
+                        <constraint firstItem="uF4-Op-cMO" firstAttribute="top" secondItem="awG-yb-0Yp" secondAttribute="bottom" id="Paz-kJ-Y3X"/>
+                        <constraint firstAttribute="bottom" secondItem="uF4-Op-cMO" secondAttribute="bottom" constant="23" id="V6a-2X-J6M"/>
+                        <constraint firstItem="uF4-Op-cMO" firstAttribute="leading" secondItem="b4s-Nq-rtG" secondAttribute="leading" id="YvG-Px-SUd"/>
+                        <constraint firstItem="kyT-k5-ds6" firstAttribute="top" secondItem="b4s-Nq-rtG" secondAttribute="top" id="dSW-0t-xoQ"/>
+                        <constraint firstItem="awG-yb-0Yp" firstAttribute="top" secondItem="kyT-k5-ds6" secondAttribute="bottom" id="f2I-sX-enI"/>
+                        <constraint firstAttribute="trailing" secondItem="awG-yb-0Yp" secondAttribute="trailing" id="k3Z-hG-0if"/>
+                        <constraint firstAttribute="trailing" secondItem="kyT-k5-ds6" secondAttribute="trailing" id="rL8-Ve-93O"/>
+                        <constraint firstItem="uF4-Op-cMO" firstAttribute="top" secondItem="awG-yb-0Yp" secondAttribute="bottom" id="wW6-XS-7Wd"/>
+                        <constraint firstItem="awG-yb-0Yp" firstAttribute="top" secondItem="kyT-k5-ds6" secondAttribute="bottom" id="xb0-E3-Ke9"/>
+                        <constraint firstAttribute="trailing" secondItem="uF4-Op-cMO" secondAttribute="trailing" id="yLn-10-p3g"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="b4s-Nq-rtG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Eh-os-JhP"/>
-                <constraint firstItem="b4s-Nq-rtG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ciU-en-Xqu"/>
-                <constraint firstItem="b4s-Nq-rtG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dNE-M5-0mu"/>
-                <constraint firstItem="b4s-Nq-rtG" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="zrC-Sw-ue7"/>
+                <constraint firstItem="b4s-Nq-rtG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Hg-Vn-4GU"/>
+                <constraint firstItem="b4s-Nq-rtG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7p1-KO-5wl"/>
+                <constraint firstAttribute="bottom" secondItem="b4s-Nq-rtG" secondAttribute="bottom" id="8Y0-dG-2NL"/>
+                <constraint firstItem="b4s-Nq-rtG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="MwL-cL-5dC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="130.40000000000001" y="120.08995502248877"/>
+            <point key="canvasLocation" x="128.98550724637681" y="119.86607142857142"/>
         </view>
     </objects>
     <resources>
