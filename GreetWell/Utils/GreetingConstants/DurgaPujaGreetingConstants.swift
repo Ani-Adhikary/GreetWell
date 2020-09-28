@@ -22,7 +22,7 @@ struct DurgaPujaGreetingConstants {
     static let durgaPujaGreeting2ID = 2
     static let durgaPujaGreeting2Image = "DurgaPuja2"
     
-    // MARK: - Greeting 3 - Home
+    // MARK: - Greeting 3
     
     static let durgaPujaGreeting3ID = 3
     static let durgaPujaGreeting3Image = "DurgaPuja3"
@@ -91,5 +91,10 @@ struct DurgaPujaGreetingConstants {
     
     static let durgaPujaGreeting16ID = 16
     static let durgaPujaGreeting16Image = "DurgaPuja16"
+    
+    // MARK: - Greeting 24 - Home
+    
+    static let durgaPujaGreeting24ID = 24
+    static let durgaPujaGreeting24Image = "DurgaPuja24"
     
 }
