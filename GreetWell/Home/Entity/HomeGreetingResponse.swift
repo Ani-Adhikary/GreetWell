@@ -29,13 +29,14 @@ class HomeGreetingResponse {
         let christmasGreetings = getChristmasGreetings()
         let durgaPujaGreetings = getDurgaPujaGreetings()
         let ganeshChaturthiGreetings = getGaneshChaturthiGreetings()
+        let thanksgivingGreetings = getThanksgivingGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
             Greeting(id: GreetingsHomeConstants.greetingHome1ID, greeting: GreetingsHomeConstants.greetingHome1Text, image: GreetingsHomeConstants.greetingHome1Image, additionalInfo: "", greetingType: .birthday, greetingPageCategory: .homePage, favourite: false),
             
             Greeting(id: GreetingsHomeConstants.greetingHome8ID, greeting: GreetingsHomeConstants.greetingHome8Text, image: GreetingsHomeConstants.greetingHome8Image, additionalInfo: "", greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false),
-            Greeting(id: GreetingsHomeConstants.greetingHome11ID, greeting: GreetingsHomeConstants.greetingHome11Text, image: GreetingsHomeConstants.greetingHome11Image, additionalInfo: "", greetingType: .thanksgiving, greetingPageCategory: .homePage, favourite: false),
+        
             Greeting(id: GreetingsHomeConstants.greetingHome13ID, greeting: GreetingsHomeConstants.greetingHome13Text, image: GreetingsHomeConstants.greetingHome13Image, additionalInfo: "", greetingType: .newYear, greetingPageCategory: .homePage, favourite: false)
         ]
         
@@ -53,6 +54,7 @@ class HomeGreetingResponse {
         greetings += christmasGreetings
         greetings += durgaPujaGreetings
         greetings += ganeshChaturthiGreetings
+        greetings += thanksgivingGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -394,6 +396,29 @@ class HomeGreetingResponse {
             Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting15ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting15Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting16ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting16Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting28ID, greeting: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingText, image: GaneshChaturthiGreetingConstants.ganeshChaturthiGreeting28Image, additionalInfo: GaneshChaturthiGreetingConstants.ganeshChaturthiGreetingAccLabel, greetingType: .ganeshChaturthi, greetingPageCategory: .homePage, favourite: false)
+        ]
+        return greetings
+    }
+    
+    static func getThanksgivingGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting1ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting1Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting2ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting2Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting3ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting3Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting4ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting4Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting5ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting5Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting6ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting6Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting7ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting7Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting8ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting8Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting9ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting9Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting10ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting10Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting11ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting11Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting12ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting12Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting13ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting13Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting14ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting14Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting15ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting15Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting16ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting16Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: ThanksgivingGreetingConstants.thanksgivingGreeting33ID, greeting: ThanksgivingGreetingConstants.thanksgivingGreetingText, image: ThanksgivingGreetingConstants.thanksgivingGreeting33Image, additionalInfo: ThanksgivingGreetingConstants.thanksgivingGreetingAccLabel, greetingType: .thanksgiving, greetingPageCategory: .greetingPage, favourite: false)
         ]
         return greetings
     }
