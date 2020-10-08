@@ -13,8 +13,35 @@ struct GetWellSoonGreetingConstants {
     // MARK: - Greeting 1
     
     static let getWellSoonGreeting1ID = 1
-    static let getWellSoonGreetingText = "Happy Mothers Day"
-    static let getWellSoonGreetingAccLabel = "Mothers Day"
-    static let getWellSoonGreeting1Image = "MothersDay01"
+    static let getWellSoonGreetingText = "Get Well Soon"
+    static let getWellSoonGreetingAccLabel = "Get Well Soon"
+    static let getWellSoonGreeting1Image = "GetWellSoon1"
+    
+    // MARK: - Greeting 2
+    
+    static let getWellSoonGreeting2ID = 2
+    static let getWellSoonGreeting2Image = "GetWellSoon2"
+    
+    // MARK: - Greeting 3
+    
+    static let getWellSoonGreeting3ID = 3
+    static let getWellSoonGreeting3Image = "GetWellSoon3"
+    
+    // MARK: - Greeting 4
+    
+    static let getWellSoonGreeting4ID = 4
+    static let getWellSoonGreeting4Image = "GetWellSoon4"
+    
+    // MARK: - Greeting 5
+    
+    static let getWellSoonGreeting5ID = 5
+    static let getWellSoonGreeting5Image = "GetWellSoon5"
+    
+    // MARK: - Greeting 6
+    
+    static let getWellSoonGreeting6ID = 6
+    static let getWellSoonGreeting6Image = "GetWellSoon6"
+    
+    
     
 }
