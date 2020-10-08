@@ -486,12 +486,12 @@
 		AFEF43DE24ADFD6E0028A48D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				AF27343524C492B3007DD997 /* QuoteConstants */,
 				AF48C0B124B9F1DA00DE8AE9 /* DeviceEnv.swift */,
-				AF18768524B247AA00BD4E97 /* Extensions */,
 				AF37838124B22FF80001FE96 /* CustomLayout.swift */,
-				AF37837724B226A30001FE96 /* GreetingConstants */,
 				AFEF43F024AE1E4F0028A48D /* MainTabBarController.swift */,
+				AF27343524C492B3007DD997 /* QuoteConstants */,
+				AF18768524B247AA00BD4E97 /* Extensions */,
+				AF37837724B226A30001FE96 /* GreetingConstants */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
