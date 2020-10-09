@@ -42,6 +42,54 @@ struct GetWellSoonGreetingConstants {
     static let getWellSoonGreeting6ID = 6
     static let getWellSoonGreeting6Image = "GetWellSoon6"
     
+    // MARK: - Greeting 7 - Home
     
+    static let getWellSoonGreeting7ID = 7
+    static let getWellSoonGreeting7Image = "GetWellSoon7"
+    
+    // MARK: - Greeting 8
+    
+    static let getWellSoonGreeting8ID = 8
+    static let getWellSoonGreeting8Image = "GetWellSoon8"
+    
+    // MARK: - Greeting 9
+    
+    static let getWellSoonGreeting9ID = 9
+    static let getWellSoonGreeting9Image = "GetWellSoon9"
+    
+    // MARK: - Greeting 10
+    
+    static let getWellSoonGreeting10ID = 10
+    static let getWellSoonGreeting10Image = "GetWellSoon10"
+    
+    // MARK: - Greeting 11
+    
+    static let getWellSoonGreeting11ID = 11
+    static let getWellSoonGreeting11Image = "GetWellSoon11"
+    
+    // MARK: - Greeting 12
+    
+    static let getWellSoonGreeting12ID = 12
+    static let getWellSoonGreeting12Image = "GetWellSoon12"
+    
+    // MARK: - Greeting 13
+    
+    static let getWellSoonGreeting13ID = 13
+    static let getWellSoonGreeting13Image = "GetWellSoon13"
+    
+    // MARK: - Greeting 14
+    
+    static let getWellSoonGreeting14ID = 14
+    static let getWellSoonGreeting14Image = "GetWellSoon14"
+    
+    // MARK: - Greeting 15
+    
+    static let getWellSoonGreeting15ID = 15
+    static let getWellSoonGreeting15Image = "GetWellSoon15"
+    
+    // MARK: - Greeting 16
+    
+    static let getWellSoonGreeting16ID = 16
+    static let getWellSoonGreeting16Image = "GetWellSoon16"
     
 }

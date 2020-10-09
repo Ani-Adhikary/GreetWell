@@ -30,6 +30,7 @@ class HomeGreetingResponse {
         let durgaPujaGreetings = getDurgaPujaGreetings()
         let ganeshChaturthiGreetings = getGaneshChaturthiGreetings()
         let thanksgivingGreetings = getThanksgivingGreetings()
+        let getWellSoonGreetings = getGetWellSoonGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
@@ -55,6 +56,7 @@ class HomeGreetingResponse {
         greetings += durgaPujaGreetings
         greetings += ganeshChaturthiGreetings
         greetings += thanksgivingGreetings
+        greetings += getWellSoonGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -422,6 +424,52 @@ class HomeGreetingResponse {
         ]
         return greetings
     }
+            
+    static func getGetWellSoonGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting1ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting1Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting2ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting2Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting3ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting3Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting4ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting4Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting5ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting5Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting6ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting6Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting7ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting7Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting8ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting8Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting9ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting9Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting10ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting10Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting11ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting11Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting12ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting12Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting13ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting13Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting14ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting14Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting15ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting15Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: GetWellSoonGreetingConstants.getWellSoonGreeting16ID, greeting: GetWellSoonGreetingConstants.getWellSoonGreetingText, image: GetWellSoonGreetingConstants.getWellSoonGreeting16Image, additionalInfo: GetWellSoonGreetingConstants.getWellSoonGreetingAccLabel, greetingType: .getWellSoon, greetingPageCategory: .greetingPage, favourite: false)
+        ]
+        return greetings
+    }
+    
+    static func getDussehraGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting1ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting1Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting2ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting2Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting3ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting3Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting4ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting4Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting5ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting5Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting6ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting6Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting7ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting7Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting8ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting8Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting9ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting9Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting10ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting10Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting11ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting11Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting12ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting12Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting13ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting13Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting14ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting14Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting15ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting15Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting16ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting16Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting17ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting17Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            
+        ]
+        return greetings
+    }
     
     static func getAnyGreetings() -> [Greeting] {
         let greetings = [
@@ -468,6 +516,8 @@ class HomeGreetingResponse {
             return "Get Well Soon"
         case .durgaPuja:
             return "Durga Puja"
+        case .dussehra:
+            return "Dussehra"
         default:
             return "Not found"
         }
@@ -529,6 +579,7 @@ enum GreetingType: String {
     case ganeshChaturthi
     case diwali
     case durgaPuja
+    case dussehra
     case eid
 }
 
