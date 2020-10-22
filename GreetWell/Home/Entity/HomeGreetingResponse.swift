@@ -31,6 +31,7 @@ class HomeGreetingResponse {
         let ganeshChaturthiGreetings = getGaneshChaturthiGreetings()
         let thanksgivingGreetings = getThanksgivingGreetings()
         let getWellSoonGreetings = getGetWellSoonGreetings()
+        let dussehraGreetings = getDussehraGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
@@ -57,6 +58,7 @@ class HomeGreetingResponse {
         greetings += ganeshChaturthiGreetings
         greetings += thanksgivingGreetings
         greetings += getWellSoonGreetings
+        greetings += dussehraGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -305,7 +307,7 @@ class HomeGreetingResponse {
             Greeting(id: EidGreetingConstants.eidGreeting14ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting14Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EidGreetingConstants.eidGreeting15ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting15Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: EidGreetingConstants.eidGreeting16ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting16Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: EidGreetingConstants.eidGreeting32ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting32Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .homePage, favourite: false)
+            Greeting(id: EidGreetingConstants.eidGreeting31ID, greeting: EidGreetingConstants.eidGreetingText, image: EidGreetingConstants.eidGreeting31Image, additionalInfo: EidGreetingConstants.eidGreetingAccLabel, greetingType: .eid, greetingPageCategory: .homePage, favourite: false)
         ]
         return greetings
     }
@@ -450,12 +452,12 @@ class HomeGreetingResponse {
     static func getDussehraGreetings() -> [Greeting] {
         let greetings = [
             Greeting(id: DusseraGreetingConstants.dusseraGreeting1ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting1Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: DusseraGreetingConstants.dusseraGreeting2ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting2Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting2ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting2Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: DusseraGreetingConstants.dusseraGreeting3ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting3Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: DusseraGreetingConstants.dusseraGreeting4ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting4Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: DusseraGreetingConstants.dusseraGreeting5ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting5Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: DusseraGreetingConstants.dusseraGreeting6ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting6Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: DusseraGreetingConstants.dusseraGreeting7ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting7Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .homePage, favourite: false),
+            Greeting(id: DusseraGreetingConstants.dusseraGreeting7ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting7Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: DusseraGreetingConstants.dusseraGreeting8ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting8Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: DusseraGreetingConstants.dusseraGreeting9ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting9Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: DusseraGreetingConstants.dusseraGreeting10ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting10Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),

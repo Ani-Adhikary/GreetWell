@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ValentinesDay9.jpg",
+      "filename" : "ValentinesDay9@1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ValentinesDay9@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ValentinesDay9@3x.png",
       "scale" : "3x"
     }
   ],

@@ -92,8 +92,8 @@ struct EidGreetingConstants {
     static let eidGreeting16ID = 16
     static let eidGreeting16Image = "Eid16"
     
-    // MARK: - Greeting 32 - Home
+    // MARK: - Greeting 31 - Home
     
-    static let eidGreeting32ID = 32
-    static let eidGreeting32Image = "Eid32"
+    static let eidGreeting31ID = 31
+    static let eidGreeting31Image = "Eid31"
 }
