@@ -32,13 +32,12 @@ class HomeGreetingResponse {
         let thanksgivingGreetings = getThanksgivingGreetings()
         let getWellSoonGreetings = getGetWellSoonGreetings()
         let dussehraGreetings = getDussehraGreetings()
+        let usaIndependenceDayGreetings = getUSAIndependenceDayGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
             Greeting(id: GreetingsHomeConstants.greetingHome1ID, greeting: GreetingsHomeConstants.greetingHome1Text, image: GreetingsHomeConstants.greetingHome1Image, additionalInfo: "", greetingType: .birthday, greetingPageCategory: .homePage, favourite: false),
             
-            Greeting(id: GreetingsHomeConstants.greetingHome8ID, greeting: GreetingsHomeConstants.greetingHome8Text, image: GreetingsHomeConstants.greetingHome8Image, additionalInfo: "", greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false),
-        
             Greeting(id: GreetingsHomeConstants.greetingHome13ID, greeting: GreetingsHomeConstants.greetingHome13Text, image: GreetingsHomeConstants.greetingHome13Image, additionalInfo: "", greetingType: .newYear, greetingPageCategory: .homePage, favourite: false)
         ]
         
@@ -59,6 +58,7 @@ class HomeGreetingResponse {
         greetings += thanksgivingGreetings
         greetings += getWellSoonGreetings
         greetings += dussehraGreetings
+        greetings += usaIndependenceDayGreetings
         
         //        let filteredGreetings = greetings.filter { greeting  in
         //            greeting.greetingType == greetType
@@ -469,6 +469,29 @@ class HomeGreetingResponse {
             Greeting(id: DusseraGreetingConstants.dusseraGreeting16ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting16Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: DusseraGreetingConstants.dusseraGreeting17ID, greeting: DusseraGreetingConstants.dusseraGreetingText, image: DusseraGreetingConstants.dusseraGreeting17Image, additionalInfo: DusseraGreetingConstants.dusseraGreetingAccLabel, greetingType: .dussehra, greetingPageCategory: .greetingPage, favourite: false),
             
+        ]
+        return greetings
+    }
+    
+    static func getUSAIndependenceDayGreetings() -> [Greeting] {
+        let greetings = [
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting1ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting1Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting2ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting2Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting3ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting3Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting4ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting4Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting5ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting5Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting6ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting6Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting7ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting7Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting8ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting8Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting9ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting9Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting10ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting10Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting11ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting11Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting12ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting12Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting13ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting13Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting14ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting14Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting15ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting15Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting16ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting16Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: USAIndeDayGreetingConstants.usaIndeDayGreeting17ID, greeting: USAIndeDayGreetingConstants.usaIndeDayGreetingText, image: USAIndeDayGreetingConstants.usaIndeDayGreeting17Image, additionalInfo: USAIndeDayGreetingConstants.usaIndeDayGreetingAccLabel, greetingType: .usaIndependenceDay, greetingPageCategory: .homePage, favourite: false)
         ]
         return greetings
     }
