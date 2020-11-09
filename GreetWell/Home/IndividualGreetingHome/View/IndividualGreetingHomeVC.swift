@@ -23,7 +23,6 @@ class IndividualGreetingHomeVC: UIViewController {
     @IBOutlet weak var favBarButtonItem: UIBarButtonItem!
     
     
-    
     var greetings = [Greeting]()
     var greetingFromHome = Greeting()
     var dictionarySelectedIndecPath: [IndexPath: Bool] = [:]

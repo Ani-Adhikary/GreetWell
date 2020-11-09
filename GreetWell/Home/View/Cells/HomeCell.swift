@@ -30,5 +30,4 @@ class HomeCell: UICollectionViewCell {
         imageView.image = UIImage(named: greeting.greetingImage)
     }
     
-
 }

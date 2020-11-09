@@ -30,9 +30,9 @@ class HomeGreetingResponse {
         let durgaPujaGreetings = getDurgaPujaGreetings()
         let ganeshChaturthiGreetings = getGaneshChaturthiGreetings()
         let thanksgivingGreetings = getThanksgivingGreetings()
-        let getWellSoonGreetings = getGetWellSoonGreetings()
-        let dussehraGreetings = getDussehraGreetings()
+        let getWellSoonGreetings = getGetWellSoonGreetings()        
         let usaIndependenceDayGreetings = getUSAIndependenceDayGreetings()
+        let dussehraGreetings = getDussehraGreetings()
         
         //var greetings1 = [Greeting]()
         var greetings = [
