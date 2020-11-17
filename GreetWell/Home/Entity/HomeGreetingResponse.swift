@@ -547,6 +547,51 @@ class HomeGreetingResponse {
             return "Not found"
         }
     }
+    
+    static func getIndividualGreetingsDate(greetType: GreetingType) -> String? {
+        switch greetType {
+        case .birthday:
+            return nil
+        case .valentinesDay:
+            return "Valentines Day is celebrated on 14th February"
+        case .womansDay:
+            return "Women's Day is celebrated on 8th March"
+        case .mothersDay:
+            return "Mother's Day"
+        case .eid:
+            return nil
+        case .fathersDay:
+            return "Father's Day"
+        case .corona:
+            return nil
+        case .usaIndependenceDay:
+            return "USA Independence Day"
+        case .janmashtami:
+            return nil
+        case .ganeshChaturthi:
+            return nil
+        case .thanksgiving:
+            return "thanksgiving"
+        case .christmas:
+            return "Merry Christmas"
+        case .newYear:
+            return "Happy New Year"
+        case .diwali:
+            return nil
+        case .halloween:
+            return "Halloween"
+        case .easter:
+            return "Easter"
+        case .getWellSoon:
+            return nil
+        case .durgaPuja:
+            return nil
+        case .dussehra:
+            return nil
+        default:
+            return "Not found"
+        }
+    }
 }
 
 class Greeting {

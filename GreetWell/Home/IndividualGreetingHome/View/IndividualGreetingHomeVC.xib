@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="collectionView" destination="awG-yb-0Yp" id="OsK-h1-2qo"/>
                 <outlet property="dateLabel" destination="Fen-74-1yd" id="FE7-CZ-fnr"/>
+                <outlet property="dateLabelHeightConstraint" destination="wUf-al-USI" id="CmQ-mj-6D8"/>
                 <outlet property="favBarButtonItem" destination="D9q-SW-baR" id="4io-cG-mJQ"/>
                 <outlet property="shareBarButtonItem" destination="oLH-hK-19a" id="NgF-aw-e1r"/>
                 <outlet property="toolbar" destination="uF4-Op-cMO" id="ULT-bC-YDS"/>
@@ -50,6 +51,7 @@
                                 <constraint firstItem="Fen-74-1yd" firstAttribute="top" secondItem="kyT-k5-ds6" secondAttribute="top" constant="8" id="Lb7-7A-RsH"/>
                                 <constraint firstAttribute="bottom" secondItem="Fen-74-1yd" secondAttribute="bottom" constant="7" id="lLr-3n-vnC"/>
                                 <constraint firstAttribute="trailing" secondItem="Fen-74-1yd" secondAttribute="trailing" constant="16" id="m5R-HC-ueM"/>
+                                <constraint firstAttribute="height" constant="35.670000000000002" id="wUf-al-USI"/>
                             </constraints>
                         </view>
                         <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uF4-Op-cMO">

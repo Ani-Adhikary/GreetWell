@@ -76,6 +76,12 @@ class IndividualGreetingHomeVC: UIViewController {
         navigationController?.isNavigationBarHidden = false
         
         navigationItem.rightBarButtonItem = selectBarButton
+        
+        if let dateVal = HomeGreetingResponse.getIndividualGreetingsDate(greetType: greetingFromHome.greetingType) {
+            dateLabel.text = dateVal
+        } else {
+            dateLabelHeightConstraint.constant = 0
+        }
     }
     
     func setupCollectionView() {
