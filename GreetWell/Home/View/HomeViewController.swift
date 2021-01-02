@@ -28,7 +28,6 @@ class HomeViewController: UIViewController {
         greetings = HomeGreetingResponse.getGreetings(greetType: .home, greetingPageCategory: GreetingPageCategory.homePage)
         setupCollectionView()
         setupCollectionViewItemSize()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
