@@ -557,31 +557,31 @@ class HomeGreetingResponse {
         case .womansDay:
             return "Women's Day is celebrated on 8th March"
         case .mothersDay:
-            return "Mother's Day"
+            return "Mother's Day is celebrated on 9th May."
         case .eid:
             return nil
         case .fathersDay:
-            return "Father's Day"
+            return "Father's Day is celebrated on 20th June"
         case .corona:
             return nil
         case .usaIndependenceDay:
-            return "USA Independence Day"
+            return "USA Independence Day is celebrated on 4th July"
         case .janmashtami:
             return nil
         case .ganeshChaturthi:
             return nil
         case .thanksgiving:
-            return "thanksgiving"
+            return "Thanksgiving is celebrated on 25 November"
         case .christmas:
-            return "Merry Christmas"
+            return "Christmas is celebrated on 25th December"
         case .newYear:
-            return "Happy New Year"
+            return "New Year is celebrated on 1st January"
         case .diwali:
-            return nil
+            return "Diwali is on 4th November"
         case .halloween:
-            return "Halloween"
+            return "Halloween is celebrated on 31st October"
         case .easter:
-            return "Easter"
+            return "Easter is on 4th April"
         case .getWellSoon:
             return nil
         case .durgaPuja:
