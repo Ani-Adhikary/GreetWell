@@ -74,7 +74,6 @@ class GreetingCell: UICollectionViewCell {
     }
 }
 
-
 extension GreetingCell: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return greetingImageView

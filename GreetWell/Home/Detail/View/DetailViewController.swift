@@ -36,12 +36,14 @@ class DetailViewController: UIViewController {
         //            print("Not found-----------")
         //        }
         
-        if let indexOfGreeting = greetings.firstIndex(of: greetingFromHome) {
-            print("indexOfGreeting--------- \(indexOfGreeting)")
-            collectionView.scrollToItem(at: IndexPath(item: indexOfGreeting, section: 0), at: .right, animated: false)
-        } else {
-            print("Not found-----------")
-        }
+//        if let indexOfGreeting = greetings.firstIndex(of: greetingFromHome) {
+//            print("indexOfGreeting--------- \(indexOfGreeting)")
+//            collectionView.reloadData()
+//            collectionView.layoutIfNeeded()
+//            collectionView.scrollToItem(at: IndexPath(item: indexOfGreeting, section: 0), at: .right, animated: false)
+//        } else {
+//            print("Not found-----------")
+//        }
         
     }
     
@@ -71,6 +73,18 @@ class DetailViewController: UIViewController {
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(GreetingCell.nib, forCellWithReuseIdentifier: GreetingCell.identifier)
+                
+        /////Exp
+        if let indexOfGreeting = greetings.firstIndex(of: greetingFromHome) {
+            print("indexOfGreeting called--------- \(indexOfGreeting)")
+            collectionView.scrollToItem(at: IndexPath(item: indexOfGreeting, section: 0), at: .right, animated: true)
+            collectionView.reloadData()
+            collectionView.layoutIfNeeded()
+        } else {
+            print("Not found-----------")
+        }
+        
+        /////
     }
     
     @objc func hideNavAndTabBarOnTap() {
