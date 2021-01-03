@@ -77,7 +77,11 @@ class DetailViewController: UIViewController {
         /////Exp
         if let indexOfGreeting = greetings.firstIndex(of: greetingFromHome) {
             print("indexOfGreeting called--------- \(indexOfGreeting)")
-            collectionView.scrollToItem(at: IndexPath(item: indexOfGreeting, section: 0), at: .right, animated: true)
+            collectionView.layoutIfNeeded()
+            //self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
+            
+            collectionView.scrollToItem(at: IndexPath(item: indexOfGreeting, section: 0), at: .left, animated: false)
+            
             collectionView.reloadData()
             collectionView.layoutIfNeeded()
         } else {
