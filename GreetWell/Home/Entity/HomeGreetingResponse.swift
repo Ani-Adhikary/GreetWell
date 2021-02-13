@@ -526,7 +526,7 @@ class HomeGreetingResponse {
         case .ganeshChaturthi:
             return "Ganesh Chaturthi"
         case .thanksgiving:
-            return "thanksgiving"
+            return "Thanksgiving"
         case .christmas:
             return "Merry Christmas"
         case .newYear:
