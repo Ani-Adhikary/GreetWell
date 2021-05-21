@@ -14,7 +14,7 @@ struct ChristmasGreetingConstants {
     
     static let christmasGreeting1ID = 1
     static let christmasGreetingText = "Merry Christmas"
-    static let christmasGreetingAccLabel = "Christmas Greetings"
+    static let christmasGreetingAccLabel = "Christmas"
     static let christmasGreeting1Image = "Christmas01"
     
     // MARK: - Greeting 2

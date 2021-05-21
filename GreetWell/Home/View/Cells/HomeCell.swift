@@ -11,7 +11,9 @@ import UIKit
 class HomeCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var highlightIndicator: UIView!
+    
+    @IBOutlet weak var categoryLabel: UILabel!
+    //@IBOutlet weak var highlightIndicator: UIView!
     //@IBOutlet weak var selectIndicator: UIImageView!
     
     override func awakeFromNib() {
@@ -28,6 +30,7 @@ class HomeCell: UICollectionViewCell {
     
     func setupData(greeting: Greeting) {
         imageView.image = UIImage(named: greeting.greetingImage)
+        categoryLabel.text = greeting.additionalInfo
     }
     
 }
