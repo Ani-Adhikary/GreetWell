@@ -14,7 +14,7 @@ struct USAIndeDayGreetingConstants {
     
     static let usaIndeDayGreeting1ID = 1
     static let usaIndeDayGreetingText = "Happy Independence Day"
-    static let usaIndeDayGreetingAccLabel = "Happy Independence Day"
+    static let usaIndeDayGreetingAccLabel = "USA Independence Day"
     static let usaIndeDayGreeting1Image = "USAIndependenceDay1"
     
     // MARK: - Greeting 2

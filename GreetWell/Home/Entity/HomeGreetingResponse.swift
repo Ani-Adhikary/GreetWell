@@ -36,8 +36,6 @@ class HomeGreetingResponse {
         
         //var greetings1 = [Greeting]()
         var greetings = [
-            Greeting(id: GreetingsHomeConstants.greetingHome1ID, greeting: GreetingsHomeConstants.greetingHome1Text, image: GreetingsHomeConstants.greetingHome1Image, additionalInfo: "", greetingType: .birthday, greetingPageCategory: .homePage, favourite: false),
-            
             Greeting(id: GreetingsHomeConstants.greetingHome13ID, greeting: GreetingsHomeConstants.greetingHome13Text, image: GreetingsHomeConstants.greetingHome13Image, additionalInfo: "", greetingType: .newYear, greetingPageCategory: .homePage, favourite: false)
         ]
         
@@ -86,7 +84,7 @@ class HomeGreetingResponse {
         
         let greetings = [
             Greeting(id: BirthdayGreetingConstants.bdayGreeting1ID, greeting: BirthdayGreetingConstants.bdayGreetingText, image: BirthdayGreetingConstants.bdayGreeting1Image, additionalInfo: BirthdayGreetingConstants.bdayGreetingAccLabel, greetingType: .birthday, greetingPageCategory: .greetingPage, favourite: false),
-            Greeting(id: BirthdayGreetingConstants.bdayGreeting2ID, greeting: BirthdayGreetingConstants.bdayGreetingText, image: BirthdayGreetingConstants.bdayGreeting2Image, additionalInfo: BirthdayGreetingConstants.bdayGreetingAccLabel, greetingType: .birthday, greetingPageCategory: .greetingPage, favourite: false),
+            Greeting(id: BirthdayGreetingConstants.bdayGreeting2ID, greeting: BirthdayGreetingConstants.bdayGreetingText, image: BirthdayGreetingConstants.bdayGreeting2Image, additionalInfo: BirthdayGreetingConstants.bdayGreetingAccLabel, greetingType: .birthday, greetingPageCategory: .homePage, favourite: false),
             Greeting(id: BirthdayGreetingConstants.bdayGreeting3ID, greeting: BirthdayGreetingConstants.bdayGreetingText, image: BirthdayGreetingConstants.bdayGreeting3Image, additionalInfo: BirthdayGreetingConstants.bdayGreetingAccLabel, greetingType: .birthday, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: BirthdayGreetingConstants.bdayGreeting4ID, greeting: BirthdayGreetingConstants.bdayGreetingText, image: BirthdayGreetingConstants.bdayGreeting4Image, additionalInfo: BirthdayGreetingConstants.bdayGreetingAccLabel, greetingType: .birthday, greetingPageCategory: .greetingPage, favourite: false),
             Greeting(id: BirthdayGreetingConstants.bdayGreeting5ID, greeting: BirthdayGreetingConstants.bdayGreetingText, image: BirthdayGreetingConstants.bdayGreeting5Image, additionalInfo: BirthdayGreetingConstants.bdayGreetingAccLabel, greetingType: .birthday, greetingPageCategory: .greetingPage, favourite: false),

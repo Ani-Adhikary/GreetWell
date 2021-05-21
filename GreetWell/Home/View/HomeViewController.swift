@@ -66,7 +66,7 @@ class HomeViewController: UIViewController {
     
     func filterContentForSearchText(_ searchText: String) {
         filteredGreetings = greetings.filter({ (greet: Greeting) -> Bool in
-            return greet.greeting.lowercased().contains(searchText.lowercased())
+            return greet.additionalInfo.lowercased().contains(searchText.lowercased())
         })
         collectionView.reloadData()
     }
