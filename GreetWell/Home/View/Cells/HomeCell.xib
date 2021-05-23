@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="212" height="163"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtL-H5-7EO">
-                                <rect key="frame" x="16" y="168" width="180" height="29"/>
+                                <rect key="frame" x="8" y="168" width="196" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="uAW-H9-MV4"/>
                                 </constraints>
@@ -37,9 +37,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zdb-Wh-q5r" secondAttribute="trailing" id="Od0-qW-x7P"/>
-                            <constraint firstItem="AtL-H5-7EO" firstAttribute="leading" secondItem="8cM-Zz-iPH" secondAttribute="leading" constant="16" id="UYK-b2-FSH"/>
+                            <constraint firstItem="AtL-H5-7EO" firstAttribute="leading" secondItem="8cM-Zz-iPH" secondAttribute="leading" constant="8" id="UYK-b2-FSH"/>
                             <constraint firstItem="zdb-Wh-q5r" firstAttribute="leading" secondItem="8cM-Zz-iPH" secondAttribute="leading" id="hba-Bx-2Zf"/>
-                            <constraint firstAttribute="trailing" secondItem="AtL-H5-7EO" secondAttribute="trailing" constant="16" id="ipA-WB-wjB"/>
+                            <constraint firstAttribute="trailing" secondItem="AtL-H5-7EO" secondAttribute="trailing" constant="8" id="ipA-WB-wjB"/>
                             <constraint firstItem="zdb-Wh-q5r" firstAttribute="top" secondItem="8cM-Zz-iPH" secondAttribute="top" id="nLp-rO-eL6"/>
                             <constraint firstItem="AtL-H5-7EO" firstAttribute="top" secondItem="zdb-Wh-q5r" secondAttribute="bottom" constant="5" id="x5k-2d-HQj"/>
                             <constraint firstAttribute="bottom" secondItem="AtL-H5-7EO" secondAttribute="bottom" constant="10" id="yGH-fe-hNc"/>
