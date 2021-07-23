@@ -20,7 +20,7 @@ class IndividualGreetingHomeVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!    
     @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var shareBarButtonItem: UIBarButtonItem!
-    @IBOutlet weak var favBarButtonItem: UIBarButtonItem!
+    //@IBOutlet weak var favBarButtonItem: UIBarButtonItem!
     
     
     var greetings = [Greeting]()
@@ -43,7 +43,7 @@ class IndividualGreetingHomeVC: UIViewController {
                 //navigationItem.leftBarButtonItem = nil
                 collectionView.allowsMultipleSelection = false
                 shareBarButtonItem.isEnabled = false
-                favBarButtonItem.isEnabled = false
+                //favBarButtonItem.isEnabled = false
             case .select:
                 selectBarButton.title = "Cancel"
                 collectionView.allowsMultipleSelection = true
@@ -99,9 +99,9 @@ class IndividualGreetingHomeVC: UIViewController {
     
     private func setupBarButtonItems() {
         shareBarButtonItem.isEnabled = false
-        favBarButtonItem.isEnabled = false
+        //favBarButtonItem.isEnabled = false
         shareBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .disabled)
-        favBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .disabled)
+        //favBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .disabled)
     }
     
     @IBAction func shareBarButtonClicked(_ sender: UIBarButtonItem) {
@@ -142,9 +142,9 @@ class IndividualGreetingHomeVC: UIViewController {
         
     }
     
-    @IBAction func favBarButtonClicked(_ sender: UIBarButtonItem) {
-        print("fav button tapped--------------")
-    }
+//    @IBAction func favBarButtonClicked(_ sender: UIBarButtonItem) {
+//        print("fav button tapped--------------")
+//    }
     
     @objc func selectButtonClicked(_ sender: UIBarButtonItem) {
         mMode = mMode == .view ? .select : .view
@@ -181,7 +181,7 @@ extension IndividualGreetingHomeVC: UICollectionViewDataSource, UICollectionView
         case .select:
             dictionarySelectedIndecPath[indexPath] = true
             shareBarButtonItem.isEnabled = true
-            favBarButtonItem.isEnabled = true
+            //favBarButtonItem.isEnabled = true
             //print("Item selected")
         }
     }
