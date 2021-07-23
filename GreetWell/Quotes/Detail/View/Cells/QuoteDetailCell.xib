@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,26 +26,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgT-26-OhE" userLabel="ContainerView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOX-pd-Uvk">
-                                        <rect key="frame" x="322" y="120" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="1f0-Cf-uj7"/>
-                                            <constraint firstAttribute="width" constant="30" id="BPs-oa-MzK"/>
-                                        </constraints>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <state key="normal" image="Activity"/>
-                                        <connections>
-                                            <action selector="favButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hke-TX-7oH"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When you want to give up, remember why you started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tll-hA-DYi">
                                         <rect key="frame" x="25" y="220" width="364" height="143.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS1-v0-TM4" userLabel="Share Button">
-                                        <rect key="frame" x="276" y="120" width="30" height="30"/>
+                                        <rect key="frame" x="354" y="120" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="aUp-tc-Xss"/>
                                             <constraint firstAttribute="width" constant="30" id="lx3-2V-Mn9"/>
@@ -57,22 +46,20 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anonymous" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y39-0D-cFd">
                                         <rect key="frame" x="280.5" y="393.5" width="93.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="sOX-pd-Uvk" firstAttribute="top" secondItem="GgT-26-OhE" secondAttribute="top" constant="120" id="8ga-Ad-8s6"/>
-                                    <constraint firstItem="sOX-pd-Uvk" firstAttribute="leading" secondItem="BS1-v0-TM4" secondAttribute="trailing" constant="16" id="BZr-2h-ffy"/>
                                     <constraint firstAttribute="trailing" secondItem="Y39-0D-cFd" secondAttribute="trailing" constant="40" id="Oah-10-350"/>
-                                    <constraint firstItem="Tll-hA-DYi" firstAttribute="top" secondItem="sOX-pd-Uvk" secondAttribute="bottom" constant="70" id="YeE-uw-67n"/>
+                                    <constraint firstAttribute="trailing" secondItem="BS1-v0-TM4" secondAttribute="trailing" constant="30" id="YWQ-4o-7Wl"/>
+                                    <constraint firstItem="Tll-hA-DYi" firstAttribute="top" secondItem="BS1-v0-TM4" secondAttribute="bottom" constant="70" id="ZbY-wF-nEj"/>
                                     <constraint firstItem="BS1-v0-TM4" firstAttribute="top" secondItem="GgT-26-OhE" secondAttribute="top" constant="120" id="aEm-Oq-ni8"/>
                                     <constraint firstItem="Tll-hA-DYi" firstAttribute="leading" secondItem="GgT-26-OhE" secondAttribute="leading" constant="25" id="hPx-QU-uwY"/>
                                     <constraint firstItem="Y39-0D-cFd" firstAttribute="top" secondItem="Tll-hA-DYi" secondAttribute="bottom" constant="30" id="pFH-Nv-ScU"/>
                                     <constraint firstAttribute="trailing" secondItem="Tll-hA-DYi" secondAttribute="trailing" constant="25" id="q4Q-s5-RjR"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y39-0D-cFd" secondAttribute="bottom" constant="100" id="qMX-op-T9U"/>
-                                    <constraint firstAttribute="trailing" secondItem="sOX-pd-Uvk" secondAttribute="trailing" constant="62" id="uim-8c-lLT"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -85,6 +72,7 @@
                     </scrollView>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="PgB-qj-DRI" secondAttribute="bottom" id="05H-cG-W34"/>
                 <constraint firstAttribute="trailing" secondItem="PgB-qj-DRI" secondAttribute="trailing" id="3C9-Tl-2p9"/>
@@ -97,18 +85,18 @@
                 <constraint firstItem="GgT-26-OhE" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" priority="250" id="eaq-K7-pPq"/>
                 <constraint firstAttribute="trailing" secondItem="t6Z-CM-e1I" secondAttribute="trailing" id="vCc-aP-5U8"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="authorLabel" destination="Y39-0D-cFd" id="9VW-PY-jPj"/>
                 <outlet property="bgImageView" destination="t6Z-CM-e1I" id="7vn-2L-cMR"/>
-                <outlet property="favButton" destination="sOX-pd-Uvk" id="hqb-UI-md0"/>
                 <outlet property="quoteTextLabel" destination="Tll-hA-DYi" id="2as-pF-15u"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Activity" width="22" height="20"/>
         <image name="Share" width="40" height="40"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

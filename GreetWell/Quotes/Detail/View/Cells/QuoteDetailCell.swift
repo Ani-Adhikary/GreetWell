@@ -13,7 +13,7 @@ class QuoteDetailCell: UICollectionViewCell {
     @IBOutlet weak var bgImageView: UIImageView!
     @IBOutlet weak var quoteTextLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var favButton: UIButton!
+    //@IBOutlet weak var favButton: UIButton!
     var favButtonSelected = false
     
     override func awakeFromNib() {
@@ -28,9 +28,9 @@ class QuoteDetailCell: UICollectionViewCell {
         return String(describing: self)
     }
     
-    @IBAction func favButtonClicked(_ sender: UIButton) {
-        
-    }
+//    @IBAction func favButtonClicked(_ sender: UIButton) {
+//
+//    }
     
     @IBAction func shareButtonClicked(_ sender: UIButton) {
         
@@ -46,13 +46,13 @@ class QuoteDetailCell: UICollectionViewCell {
             bgImageView.image = UIImage(named: "Birthday1")?.alpha(0.4)
         }
         
-        if !quote.favourite {
-            favButtonSelected = false
-            favButton.setImage(#imageLiteral(resourceName: "Activity"), for: .normal)
-        } else {
-            favButtonSelected = true
-            favButton.setImage(#imageLiteral(resourceName: "Activity_Selected"), for: .normal)
-        }
+//        if !quote.favourite {
+//            favButtonSelected = false
+//            favButton.setImage(#imageLiteral(resourceName: "Activity"), for: .normal)
+//        } else {
+//            favButtonSelected = true
+//            favButton.setImage(#imageLiteral(resourceName: "Activity_Selected"), for: .normal)
+//        }
     }
 
 }
