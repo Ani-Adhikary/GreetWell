@@ -38,7 +38,7 @@ class MainTabBarController: UITabBarController {
         quotesVC.tabBarItem.selectedImage = UIImage(named: "StarSelected")
         quotesVC.tabBarItem.title = "Greeting Quotes"
         
-        viewControllers = [homeVC, favouritesVC, quotesVC]
+        viewControllers = [homeVC, quotesVC]
     }
 }
 
