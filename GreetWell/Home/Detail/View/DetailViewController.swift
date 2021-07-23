@@ -59,7 +59,7 @@ class DetailViewController: UIViewController {
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         //right menu
-        let rightMenuIcon = UIBarButtonItem(image: UIImage(named: "Menu"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(showMenu))
+        let rightMenuIcon = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(shareGreeting))
         navigationController?.topViewController?.navigationItem.rightBarButtonItem = rightMenuIcon
     }
     
@@ -103,6 +103,21 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @objc func shareGreeting(_ sender: UIButton) {
+        print("Share greeting clicked")
+        guard let image = UIImage(named: self.selectedGreeting.greetingImage) else {
+            return
+        }
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        
+        if DeviceEnv.isIpad {
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        }
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    /*
     @objc func showMenu(_ sender: UIButton) {
         
         // create an actionSheet
@@ -167,6 +182,7 @@ class DetailViewController: UIViewController {
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
     }
+    */
 }
 
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
