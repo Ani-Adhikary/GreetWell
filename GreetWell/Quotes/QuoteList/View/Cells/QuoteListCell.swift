@@ -9,7 +9,8 @@
 import UIKit
 
 class QuoteListCell: UITableViewCell {
-    
+        
+    @IBOutlet weak var quoteListImageView: CustomImageView!
     @IBOutlet weak var quoteListLabel: UILabel!
     
     override func awakeFromNib() {
@@ -29,6 +30,7 @@ class QuoteListCell: UITableViewCell {
     }
     
     func setupData(quoteList: QuoteList) {
+        quoteListImageView.image = UIImage(named: quoteList.listImage)
         quoteListLabel.text = quoteList.listText
     }
     
