@@ -56,6 +56,7 @@
 		AFA754E124B9BAA800519A88 /* IndividualGreetingHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA754DF24B9BAA800519A88 /* IndividualGreetingHomeVC.swift */; };
 		AFA754E224B9BAA800519A88 /* IndividualGreetingHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFA754E024B9BAA800519A88 /* IndividualGreetingHomeVC.xib */; };
 		AFAB21302523900100796374 /* ThanksgivingGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB212F2523900100796374 /* ThanksgivingGreetingConstants.swift */; };
+		AFC9BA4026D284DB00F5D332 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC9BA3F26D284DB00F5D332 /* CustomImageView.swift */; };
 		AFCE6E7824DAD53A00298666 /* DiwaliGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCE6E7724DAD53A00298666 /* DiwaliGreetingConstants.swift */; };
 		AFDF634324B3738D00017240 /* BirthdayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634224B3738D00017240 /* BirthdayGreetingConstants.swift */; };
 		AFDF634524B374BD00017240 /* FathersDayGreetingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF634424B374BD00017240 /* FathersDayGreetingConstants.swift */; };
@@ -135,6 +136,7 @@
 		AFA754DF24B9BAA800519A88 /* IndividualGreetingHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualGreetingHomeVC.swift; sourceTree = "<group>"; };
 		AFA754E024B9BAA800519A88 /* IndividualGreetingHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndividualGreetingHomeVC.xib; sourceTree = "<group>"; };
 		AFAB212F2523900100796374 /* ThanksgivingGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksgivingGreetingConstants.swift; sourceTree = "<group>"; };
+		AFC9BA3F26D284DB00F5D332 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		AFCE6E7724DAD53A00298666 /* DiwaliGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiwaliGreetingConstants.swift; sourceTree = "<group>"; };
 		AFDF634224B3738D00017240 /* BirthdayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayGreetingConstants.swift; sourceTree = "<group>"; };
 		AFDF634424B374BD00017240 /* FathersDayGreetingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FathersDayGreetingConstants.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 		AFEF43DE24ADFD6E0028A48D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AFC9BA3F26D284DB00F5D332 /* CustomImageView.swift */,
 				AF48C0B124B9F1DA00DE8AE9 /* DeviceEnv.swift */,
 				AF37838124B22FF80001FE96 /* CustomLayout.swift */,
 				AFEF43F024AE1E4F0028A48D /* MainTabBarController.swift */,
@@ -719,6 +722,7 @@
 				AFFC546E2699EC9B009968AB /* NewYearConstants.swift in Sources */,
 				AF27343F24C49352007DD997 /* NewYearQuoteConstants.swift in Sources */,
 				AFEF103D24F9127400DC6C54 /* DurgaPujaGreetingConstants.swift in Sources */,
+				AFC9BA4026D284DB00F5D332 /* CustomImageView.swift in Sources */,
 				AFDF634324B3738D00017240 /* BirthdayGreetingConstants.swift in Sources */,
 				AFDF634D24B376C500017240 /* JanmashtamiGreetingConstants.swift in Sources */,
 				AF37837B24B22A7F0001FE96 /* HomeGreetingResponse.swift in Sources */,
