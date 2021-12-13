@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol QuoteDetailCellProtocol: AnyObject {
+    func shareButtonClicked(quoteToShare: Quote)
+}
+
 class QuoteDetailCell: UICollectionViewCell {
 
     @IBOutlet weak var bgImageView: UIImageView!
@@ -15,6 +19,9 @@ class QuoteDetailCell: UICollectionViewCell {
     @IBOutlet weak var authorLabel: UILabel!
     //@IBOutlet weak var favButton: UIButton!
     var favButtonSelected = false
+    
+    var selectedQuote: Quote?    
+    weak var delegate: QuoteDetailCellProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,10 +40,14 @@ class QuoteDetailCell: UICollectionViewCell {
 //    }
     
     @IBAction func shareButtonClicked(_ sender: UIButton) {
-        
+        guard let selectedQuote = selectedQuote else {
+            return
+        }
+        delegate?.shareButtonClicked(quoteToShare: selectedQuote)
     }
     
     func setupData(quote: Quote) {
+        selectedQuote = quote
         quoteTextLabel.text = quote.quoteText
         authorLabel.text = quote.author
         

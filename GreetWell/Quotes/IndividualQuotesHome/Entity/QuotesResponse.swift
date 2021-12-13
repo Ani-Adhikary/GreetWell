@@ -43,13 +43,13 @@ class QuotesResponse {
     static func getFathersDayQuotes() -> [Quote] {
         
         let quotes = [
-            Quote(id: FathersDayQuoteConstants.fdayQuote1ID, quoteText: FathersDayQuoteConstants.fdayQuote1Text, author: FathersDayQuoteConstants.fdayQuote1Author, quoteType: QuoteType.fathersDay, backgroundImage: GreetingsHomeConstants.greetingHome6Image, favourite: false),
-            Quote(id: FathersDayQuoteConstants.fdayQuote2ID, quoteText: FathersDayQuoteConstants.fdayQuote2Text, author: FathersDayQuoteConstants.fdayQuote2Author, quoteType: QuoteType.fathersDay, backgroundImage: GreetingsHomeConstants.greetingHome6Image, favourite: false),
-            Quote(id: FathersDayQuoteConstants.fdayQuote3ID, quoteText: FathersDayQuoteConstants.fdayQuote3Text, author: FathersDayQuoteConstants.fdayQuote3Author, quoteType: QuoteType.fathersDay, backgroundImage: GreetingsHomeConstants.greetingHome6Image, favourite: false),
-            Quote(id: FathersDayQuoteConstants.fdayQuote4ID, quoteText: FathersDayQuoteConstants.fdayQuote4Text, author: FathersDayQuoteConstants.fdayQuote4Author, quoteType: QuoteType.fathersDay, backgroundImage: GreetingsHomeConstants.greetingHome6Image, favourite: false),
-            Quote(id: FathersDayQuoteConstants.fdayQuote5ID, quoteText: FathersDayQuoteConstants.fdayQuote5Text, author: FathersDayQuoteConstants.fdayQuote5Author, quoteType: QuoteType.fathersDay, backgroundImage: GreetingsHomeConstants.greetingHome6Image, favourite: false),
-            Quote(id: FathersDayQuoteConstants.fdayQuote6ID, quoteText: FathersDayQuoteConstants.fdayQuote6Text, author: FathersDayQuoteConstants.fdayQuote6Author, quoteType: QuoteType.fathersDay, backgroundImage: GreetingsHomeConstants.greetingHome6Image, favourite: false),
-            Quote(id: FathersDayQuoteConstants.fdayQuote7ID, quoteText: FathersDayQuoteConstants.fdayQuote7Text, author: FathersDayQuoteConstants.fdayQuote7Author, quoteType: QuoteType.fathersDay, backgroundImage: GreetingsHomeConstants.greetingHome6Image, favourite: false)
+            Quote(id: FathersDayQuoteConstants.fdayQuote1ID, quoteText: FathersDayQuoteConstants.fdayQuote1Text, author: FathersDayQuoteConstants.fdayQuote1Author, quoteType: QuoteType.fathersDay, backgroundImage: FathersDayQuoteConstants.fdayQuote1Image, favourite: false),
+            Quote(id: FathersDayQuoteConstants.fdayQuote2ID, quoteText: FathersDayQuoteConstants.fdayQuote2Text, author: FathersDayQuoteConstants.fdayQuote2Author, quoteType: QuoteType.fathersDay, backgroundImage: FathersDayQuoteConstants.fdayQuote2Image, favourite: false),
+            Quote(id: FathersDayQuoteConstants.fdayQuote3ID, quoteText: FathersDayQuoteConstants.fdayQuote3Text, author: FathersDayQuoteConstants.fdayQuote3Author, quoteType: QuoteType.fathersDay, backgroundImage: FathersDayQuoteConstants.fdayQuote3Image, favourite: false),
+            Quote(id: FathersDayQuoteConstants.fdayQuote4ID, quoteText: FathersDayQuoteConstants.fdayQuote4Text, author: FathersDayQuoteConstants.fdayQuote4Author, quoteType: QuoteType.fathersDay, backgroundImage: FathersDayQuoteConstants.fdayQuote4Image, favourite: false),
+            Quote(id: FathersDayQuoteConstants.fdayQuote5ID, quoteText: FathersDayQuoteConstants.fdayQuote5Text, author: FathersDayQuoteConstants.fdayQuote5Author, quoteType: QuoteType.fathersDay, backgroundImage: FathersDayQuoteConstants.fdayQuote5Image, favourite: false),
+            Quote(id: FathersDayQuoteConstants.fdayQuote6ID, quoteText: FathersDayQuoteConstants.fdayQuote6Text, author: FathersDayQuoteConstants.fdayQuote6Author, quoteType: QuoteType.fathersDay, backgroundImage: FathersDayQuoteConstants.fdayQuote6Image, favourite: false),
+            Quote(id: FathersDayQuoteConstants.fdayQuote7ID, quoteText: FathersDayQuoteConstants.fdayQuote7Text, author: FathersDayQuoteConstants.fdayQuote7Author, quoteType: QuoteType.fathersDay, backgroundImage: FathersDayQuoteConstants.fdayQuote7Image, favourite: false)
         ]
         
         return quotes
@@ -76,7 +76,15 @@ class QuotesResponse {
     static func getBirthdayDayQuotes() -> [Quote] {
         
         let quotes = [
-            Quote(id: 1, quoteText: "Happy Birthday", author: "", quoteType: QuoteType.birthday, backgroundImage: GreetingsHomeConstants.greetingHome1Image, favourite: false)
+            Quote(id: BirthdayQuoteConstants.bdayQuote1ID, quoteText: BirthdayQuoteConstants.bdayQuote1Text, author: "", quoteType: QuoteType.birthday, backgroundImage: BirthdayQuoteConstants.bdayQuote1Image, favourite: false),
+            
+            Quote(id: BirthdayQuoteConstants.bdayQuote2ID, quoteText: BirthdayQuoteConstants.bdayQuote2Text, author: "", quoteType: QuoteType.birthday, backgroundImage: BirthdayQuoteConstants.bdayQuote2Image, favourite: false),
+            
+            Quote(id: BirthdayQuoteConstants.bdayQuote3ID, quoteText: BirthdayQuoteConstants.bdayQuote3Text, author: "", quoteType: QuoteType.birthday, backgroundImage: BirthdayQuoteConstants.bdayQuote3Image, favourite: false),
+            
+            Quote(id: BirthdayQuoteConstants.bdayQuote4ID, quoteText: BirthdayQuoteConstants.bdayQuote4Text, author: "", quoteType: QuoteType.birthday, backgroundImage: BirthdayQuoteConstants.bdayQuote4Image, favourite: false),
+            
+            Quote(id: BirthdayQuoteConstants.bdayQuote5ID, quoteText: BirthdayQuoteConstants.bdayQuote5Text, author: "", quoteType: QuoteType.birthday, backgroundImage: BirthdayQuoteConstants.bdayQuote5Image, favourite: false)
         ]
         
         return quotes

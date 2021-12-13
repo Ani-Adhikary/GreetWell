@@ -51,6 +51,7 @@ extension QuotesDetailVC: UICollectionViewDataSource, UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let quoteCell = collectionView.dequeueReusableCell(withReuseIdentifier: QuoteDetailCell.identifier, for: indexPath) as! QuoteDetailCell
+        quoteCell.delegate = self
         let quote = quotes[indexPath.row]
         quoteCell.setupData(quote: quote)
         return quoteCell
@@ -70,6 +71,31 @@ extension QuotesDetailVC: UICollectionViewDataSource, UICollectionViewDelegate, 
         
         //print(indexPath)
         selectedQuoteToShare = quotes[indexPath.row]
+    }
+    
+}
+
+
+extension QuotesDetailVC: QuoteDetailCellProtocol {
+    
+    func shareButtonClicked(quoteToShare: Quote) {
+        var quoteString = ""
+        
+        if quoteToShare.author == "" {
+            quoteString = quoteToShare.quoteText
+        } else {
+            quoteString = "\(quoteToShare.quoteText)\n\n- \(quoteToShare.author)"
+        }
+        
+        //print("quoteString---------- \(quoteString)")
+        
+        let activityViewController = UIActivityViewController(activityItems: [quoteString], applicationActivities: nil)
+        
+        if DeviceEnv.isIpad {
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        }
+        present(activityViewController, animated: true, completion: nil)
     }
     
 }
