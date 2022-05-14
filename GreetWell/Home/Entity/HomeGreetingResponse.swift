@@ -3,7 +3,7 @@
 //  GreetWell
 //
 //  Created by Ani Adhikary on 05/07/20.
-//  Copyright © 2020 Ani Adhikary. All rights reserved.
+//  Copyright © 2022 Ani Adhikary. All rights reserved.
 //
 
 import Foundation
