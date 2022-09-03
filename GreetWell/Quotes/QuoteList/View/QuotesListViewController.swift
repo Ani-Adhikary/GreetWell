@@ -3,7 +3,7 @@
 //  GreetWell
 //
 //  Created by Ani Adhikary on 17/07/20.
-//  Copyright © 2020 Ani Adhikary. All rights reserved.
+//  Copyright © 2022 Ani Adhikary. All rights reserved.
 //
 
 import UIKit
@@ -31,6 +31,11 @@ class QuotesListViewController: UIViewController {
         navigationItem.hidesBackButton = true
         navigationController?.isNavigationBarHidden = false
         navigationController?.topViewController?.navigationItem.searchController = nil
+        
+        //right menu
+        let rightMenuIcon = UIBarButtonItem(image: UIImage(named: "Menu"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(showMenu))
+        navigationController?.topViewController?.navigationItem.rightBarButtonItem = rightMenuIcon
+        rightMenuIcon.tintColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
     }
     
     
@@ -49,6 +54,38 @@ class QuotesListViewController: UIViewController {
         //tableView.reloadData()
     }
     
+    @objc func showMenu(_ sender: UIButton) {
+        
+        // create an actionSheet
+        let actionSheetController: UIAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        // create an action
+        let readAsListAction: UIAlertAction = UIAlertAction(title: "Read as list", style: .default) { action -> Void in
+            print("Read as list Action pressed")
+            BusinessLogic.businessLogic.dataVault.setReadAsList(value: true)
+        }
+        
+        let readAsSlideAction: UIAlertAction = UIAlertAction(title: "Read as slide", style: .default) { action -> Void in
+            
+            print("Read as slide Action pressed")
+            BusinessLogic.businessLogic.dataVault.setReadAsList(value: false)
+        }
+        
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in }
+        
+        // add actions
+        actionSheetController.addAction(readAsListAction)
+        actionSheetController.addAction(readAsSlideAction)
+        actionSheetController.addAction(cancelAction)
+        
+        if DeviceEnv.isIpad {
+            actionSheetController.popoverPresentationController?.sourceView = self.view
+            actionSheetController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+            actionSheetController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        }
+        self.present(actionSheetController, animated: true, completion: nil)
+        
+    }
 }
 
 extension QuotesListViewController: UITableViewDataSource, UITableViewDelegate {
@@ -67,14 +104,14 @@ extension QuotesListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //                let individualQuotesHomeVC = IndividualQuotesHomeVC(nibName: "IndividualQuotesHomeVC", bundle: nil)
-        //                individualQuotesHomeVC.quoteTypeFromHome = greetingList[indexPath.row]
-        //                navigationController?.pushViewController(individualQuotesHomeVC, animated: true)
+        let individualQuotesHomeVC = IndividualQuotesHomeVC(nibName: "IndividualQuotesHomeVC", bundle: nil)
+        individualQuotesHomeVC.quoteTypeFromHome = greetingList[indexPath.row]
+        navigationController?.pushViewController(individualQuotesHomeVC, animated: true)
         
-        let quotesDetailVC = QuotesDetailVC(nibName: "QuotesDetailVC", bundle: nil)
-        quotesDetailVC.quoteTypeFromHome = greetingList[indexPath.row].listType
-        navigationController?.pushViewController(quotesDetailVC, animated: true)
-        
-        tableView.deselectRow(at: indexPath, animated: true)
+//        let quotesDetailVC = QuotesDetailVC(nibName: "QuotesDetailVC", bundle: nil)
+//        quotesDetailVC.quoteTypeFromHome = greetingList[indexPath.row].listType
+//        navigationController?.pushViewController(quotesDetailVC, animated: true)
+//
+//        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

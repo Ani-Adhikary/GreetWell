@@ -40,6 +40,7 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.topViewController?.title = "Home"
         navigationItem.hidesBackButton = true
+        navigationController?.topViewController?.navigationItem.rightBarButtonItem = nil
         navigationController?.isNavigationBarHidden = false
     }
     
