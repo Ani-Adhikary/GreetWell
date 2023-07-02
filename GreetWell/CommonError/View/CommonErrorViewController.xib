@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonErrorViewController" customModule="Sarvopari" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonErrorViewController" customModule="GreetWell" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,7 +25,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="17K-01-cxm">
                             <rect key="frame" x="37.5" y="153" width="300" height="361.5"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5CityLights" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O7w-BK-4qq" customClass="SAImageView" customModule="Sarvopari" customModuleProvider="target">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Birthday7" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O7w-BK-4qq" customClass="SAImageView" customModule="GreetWell" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="300" id="VX1-db-L9e"/>
@@ -43,13 +45,14 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="17K-01-cxm" firstAttribute="centerY" secondItem="5t6-Wf-ISE" secondAttribute="centerY" id="8Mx-HX-sB8"/>
                         <constraint firstItem="17K-01-cxm" firstAttribute="centerX" secondItem="5t6-Wf-ISE" secondAttribute="centerX" id="OXi-Bq-oDx"/>
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5t6-Wf-ISE" secondAttribute="trailing" id="Fp2-mi-c5j"/>
@@ -57,11 +60,13 @@
                 <constraint firstItem="5t6-Wf-ISE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="idu-MW-7Rd"/>
                 <constraint firstItem="5t6-Wf-ISE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mh2-FI-qSE"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="133" y="130"/>
         </view>
     </objects>
     <resources>
-        <image name="5CityLights" width="224" height="397"/>
+        <image name="Birthday7" width="997" height="880"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

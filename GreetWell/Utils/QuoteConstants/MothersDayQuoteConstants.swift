@@ -33,7 +33,7 @@ I promise that one day I'll make you proud because you are my Superhero!
     static let mdayQuote2Author = ""
     
     // MARK: - Quote 3
-    
+    // Remove
     static let mdayQuote3ID = 3
     static let mdayQuote3Text = "Wishing a special Happy Mother's Day to all the single moms out there. God knows of your sacrifice and you are not alone."
     static let mdayQuote3Image = "MothersDay03"
@@ -42,12 +42,13 @@ I promise that one day I'll make you proud because you are my Superhero!
     // MARK: - Quote 4
     
     static let mdayQuote4ID = 4
-    static let mdayQuote4Text = "Happy Mother's Day to you, beautiful single moms!"
+    static let mdayQuote4Text = "Happy Mother's Day to you, beautiful moms!"
     static let mdayQuote4Image = "MothersDay03"
     static let mdayQuote4Author = ""
     
     // MARK: - Quote 5
     
+    // Remove
     static let mdayQuote5ID = 5
     static let mdayQuote5Text = "Congratulations to all single Mothers on this day. – I have great admiration for single Mothers because they are a clear example of the ultimate sacrifice that women make so that their children are happy and have everything they need. God will reward them a lot, never forget that."
     static let mdayQuote5Image = "MothersDay03"
@@ -55,6 +56,7 @@ I promise that one day I'll make you proud because you are my Superhero!
     
     // MARK: - Quote 6
     
+    // Remove
     static let mdayQuote6ID = 6
     static let mdayQuote6Text = "Happy Mother’s day to all those women who play both Mother and father at the same time. It is a very demanding commitment, but you manage to do it and you do an excellent job with your children."
     static let mdayQuote6Image = "MothersDay03"
