@@ -12,13 +12,18 @@ class QuotesDetailVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     let layout = UICollectionViewFlowLayout()
-    var quotes = [Quote]()
+    var quotes: [Quote]?
+    var quotesToDisplay = [Quote]()
     var quoteTypeFromHome: QuoteType = .birthday
     var selectedQuoteToShare: Quote?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        quotes = QuotesResponse.getQuotes(quoteType: quoteTypeFromHome)
+        if let quotes = quotes {
+            quotesToDisplay = quotes
+        } else {
+            quotesToDisplay = QuotesResponse.getQuotes(quoteType: quoteTypeFromHome)
+        }
         setupNavBar()
         setupCollectionView()
     }
@@ -46,13 +51,13 @@ class QuotesDetailVC: UIViewController {
 
 extension QuotesDetailVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return quotes.count
+        return quotesToDisplay.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let quoteCell = collectionView.dequeueReusableCell(withReuseIdentifier: QuoteDetailCell.identifier, for: indexPath) as! QuoteDetailCell
         quoteCell.delegate = self
-        let quote = quotes[indexPath.row]
+        let quote = quotesToDisplay[indexPath.row]
         quoteCell.setupData(quote: quote)
         return quoteCell
     }
@@ -70,7 +75,7 @@ extension QuotesDetailVC: UICollectionViewDataSource, UICollectionViewDelegate, 
         guard let indexPath = collectionView.indexPathForItem(at: visiblePoint) else { return }
         
         //print(indexPath)
-        selectedQuoteToShare = quotes[indexPath.row]
+        selectedQuoteToShare = quotesToDisplay[indexPath.row]
     }
     
 }

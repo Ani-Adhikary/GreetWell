@@ -38,7 +38,6 @@ class QuotesListViewController: UIViewController {
         rightMenuIcon.tintColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
     }
     
-    
     func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
@@ -106,7 +105,7 @@ extension QuotesListViewController: UITableViewDataSource, UITableViewDelegate {
         
         if BusinessLogic.businessLogic.dataVault.isReadAsList() {
             let individualQuotesHomeVC = IndividualQuotesHomeVC(nibName: "IndividualQuotesHomeVC", bundle: nil)
-            individualQuotesHomeVC.quoteTypeFromHome = greetingList[indexPath.row]
+            individualQuotesHomeVC.quoteTypeFromHome = greetingList[indexPath.row].listType
             navigationController?.pushViewController(individualQuotesHomeVC, animated: true)
         } else {
             let quotesDetailVC = QuotesDetailVC(nibName: "QuotesDetailVC", bundle: nil)

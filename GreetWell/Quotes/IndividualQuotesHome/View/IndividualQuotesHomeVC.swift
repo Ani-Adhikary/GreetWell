@@ -13,11 +13,13 @@ class IndividualQuotesHomeVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var quotes = [Quote]()
-    var quoteTypeFromHome = QuoteList()
+    //var quoteTypeFromHome = QuoteList()
+    var quoteTypeFromHome: QuoteType = .birthday
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        quotes = QuotesResponse.getQuotes(quoteType: quoteTypeFromHome.listType)
+        //quotes = QuotesResponse.getQuotes(quoteType: quoteTypeFromHome.listType)
+        quotes = QuotesResponse.getQuotes(quoteType: quoteTypeFromHome)
         setupTableView()
     }
     
@@ -28,7 +30,7 @@ class IndividualQuotesHomeVC: UIViewController {
     
     func setupNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.topViewController?.title = QuotesResponse.getIndividualQuotesPageTitle(quoteType: quoteTypeFromHome.listType)
+        navigationController?.topViewController?.title = QuotesResponse.getIndividualQuotesPageTitle(quoteType: quoteTypeFromHome)
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.hidesBackButton = false
         navigationController?.isNavigationBarHidden = false
@@ -68,6 +70,12 @@ extension IndividualQuotesHomeVC: UITableViewDataSource, UITableViewDelegate {
 //        let individualQuotesHomeVC = IndividualQuotesHomeVC(nibName: "IndividualQuotesHomeVC", bundle: nil)
 //        individualQuotesHomeVC.quoteFromHome = quotes[indexPath.row]
 //        navigationController?.pushViewController(individualQuotesHomeVC, animated: true)
+        
+        let quotesDetailVC = QuotesDetailVC(nibName: "QuotesDetailVC", bundle: nil)
+        quotesDetailVC.quoteTypeFromHome = quoteTypeFromHome
+        quotesDetailVC.quotes = [quotes[indexPath.row]]
+        navigationController?.pushViewController(quotesDetailVC, animated: true)
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
